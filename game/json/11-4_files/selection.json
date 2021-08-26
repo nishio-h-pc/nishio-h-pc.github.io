@@ -1,0 +1,7 @@
+{
+  "text":[
+    "犯行をしていた時は・・・"
+    ],
+    "option": ["全校集会前","全校集会中","全校集会後"],
+    "jump": ["11-4_files/sujigaawanai.json","11-4_files/second.json","11-4_files/sujigaawanai.json"]
+}

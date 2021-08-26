@@ -1,0 +1,9 @@
+﻿{
+  "text":[
+    "if_files/1.json",
+    "if_files/2.json",
+    "if_files/3.json"
+    ],
+    "option": ["全校集会に出ていた生徒","荒らされていたクラスの生徒","全校集会に出ていなかった先生"],
+    "jump":["last:","7kanda.json"]
+}

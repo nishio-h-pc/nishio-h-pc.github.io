@@ -1,0 +1,104 @@
+body{
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	font-family: "New Tegomin",serif;
+	height: 100%;
+	margin: 0;
+	touch-action: none;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+}
+.menu{
+	position: absolute;
+	width: 3.3em;
+	right: 0;
+}
+input{
+	display: none;
+}
+#men:checked ~ span{
+	background-color: rgba(255,255,255,0);
+}
+#men:checked ~ span:before{
+	bottom: 0;
+	transform: rotate(45deg);
+}
+#men:checked ~ span:after{
+	top: 0;
+	transform: rotate(-45deg);
+}
+span,span:before,span:after{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 3.3em;
+	height: .66em;
+	border-radius: .1em;
+	background: white;
+	transition: .5s;
+}
+span{
+	top: 2.295em;
+}
+span:before{
+	bottom: 1.32em;
+}
+span:after{
+	top: 1.32em;
+}
+#picbt:checked ~ div{
+	background: blue;
+}
+#chr{
+	position: absolute;
+	z-index: 1;
+	bottom: 4em;
+	right: 9em;
+	height: 40%;
+}
+.txt{
+	font-size: 2em;
+	color: white;
+}
+.msgb{
+	line-height: 1.1;
+	border-radius: 1em;
+	height: auto;
+	min-height: 3.3em;
+	background: rgba(0,0,0,.8);
+	margin: 8px;
+	padding: .975em;
+	z-index: 2;
+}
+#txt{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.msgb:not(#txt){
+	background: rgba(0,0,0,.9);
+}
+.opt{
+	width: 1em;
+}
+tr{
+	line-height: 1;
+}
+@keyframes fadein{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes fadeout{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"name": "Game App",
+	"icons": [{
+		"src": "icon.png",
+		"sizes": "512x512",
+		"type": "image/png"
+	}],
+	"display": "standalone",
+	"background_color": "#708090",
+	"theme_color": "#708090"
+}

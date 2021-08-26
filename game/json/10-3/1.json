@@ -1,0 +1,18 @@
+{
+  "text":[
+    "10-3/2.json",
+    "10-3/3.json",
+    "10-3/4.json"
+    ],
+    "option": [
+      "前崎 信也君のクラスの教室",
+      "神取 祐司君、海原 浩之君のクラスの教室",
+      "職員室"
+    ],
+    "bg" : "bg/back.jpg",
+    "img" : "chr/test.png",
+    "plus" : "それぞれの現場",
+    "plus_jump" : "10-3/4.5.json",
+    "plus_depends" : 0,
+    "jump":["last:","11-4_files/initial.json"]
+}

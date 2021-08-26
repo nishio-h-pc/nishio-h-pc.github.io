@@ -1,0 +1,7 @@
+{
+  "text":[
+    "そうだ。本人は、B先生に呼び出されていた。と言っていた。じゃあ、前崎 信也は？"
+    ],
+    "option": ["B先生に呼び出されていた。","トイレに行っていた。","管理棟三階で準備をしていた。"],
+    "jump": ["11-4_files/sujigaawanai.json","11-4_files/fifth.json","11-4_files/sujigaawanai.json"]
+}

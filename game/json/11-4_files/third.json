@@ -1,0 +1,7 @@
+{
+  "text":[
+    "そうだ。管理棟三階で準備を続行していたんだ。じゃあ、海原 浩之は？"
+    ],
+    "option": ["B先生に呼び出されていた。","トイレに行っていた。","管理棟三階で準備をしていた。"],
+    "jump": ["11-4_files/forth.json","11-4_files/sujigaawanai.json","11-4_files/sujigaawanai.json"]
+}

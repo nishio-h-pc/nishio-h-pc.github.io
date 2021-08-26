@@ -1,0 +1,2349 @@
+<?xml version="1.0"?>
+<XmlSaveObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CharacterModelCollection>
+    <CharacterModel>
+      <DeepPhycheModel />
+      <Id>1</Id>
+      <IsValid>false</IsValid>
+      <ColorBrush xsi:type="SolidColorBrush">
+        <Opacity>1</Opacity>
+        <Transform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </Transform>
+        <RelativeTransform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </RelativeTransform>
+        <Color>
+          <A>255</A>
+          <R>200</R>
+          <G>0</G>
+          <B>0</B>
+          <ScA>1</ScA>
+          <ScR>0.577580452</ScR>
+          <ScG>0</ScG>
+          <ScB>0</ScB>
+        </Color>
+      </ColorBrush>
+      <LastNameRuby />
+      <FirstNameRuby />
+      <MiddleNameRuby />
+      <LastName>主人公</LastName>
+      <FirstName />
+      <MiddleName />
+      <NameOrder>FamilyPersonelBracketMiddle</NameOrder>
+      <IsShokatsuOrder>true</IsShokatsuOrder>
+      <IsBismarckOrder>false</IsBismarckOrder>
+      <IsRichelieuOrder>false</IsRichelieuOrder>
+      <NickName />
+      <Symbol>主人公</Symbol>
+      <Age />
+      <RelationWithHero />
+      <Species />
+      <Remarks>治安維持委員に入っている。</Remarks>
+      <Tags />
+      <Gender>Male</Gender>
+      <IsMale>true</IsMale>
+      <IsFemale>false</IsFemale>
+      <IsNoneGender>false</IsNoneGender>
+      <IsHermaphroditic>false</IsHermaphroditic>
+      <IsGenderNotObvious>false</IsGenderNotObvious>
+      <IsGenderOther>false</IsGenderOther>
+    </CharacterModel>
+    <CharacterModel>
+      <DeepPhycheModel />
+      <Id>2</Id>
+      <IsValid>false</IsValid>
+      <ColorBrush xsi:type="SolidColorBrush">
+        <Opacity>1</Opacity>
+        <Transform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </Transform>
+        <RelativeTransform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </RelativeTransform>
+        <Color>
+          <A>255</A>
+          <R>200</R>
+          <G>0</G>
+          <B>0</B>
+          <ScA>1</ScA>
+          <ScR>0.577580452</ScR>
+          <ScG>0</ScG>
+          <ScB>0</ScB>
+        </Color>
+      </ColorBrush>
+      <LastNameRuby />
+      <FirstNameRuby />
+      <MiddleNameRuby />
+      <LastName>犯人</LastName>
+      <FirstName />
+      <MiddleName />
+      <NameOrder>FamilyPersonelBracketMiddle</NameOrder>
+      <IsShokatsuOrder>true</IsShokatsuOrder>
+      <IsBismarckOrder>false</IsBismarckOrder>
+      <IsRichelieuOrder>false</IsRichelieuOrder>
+      <NickName />
+      <Symbol>犯人</Symbol>
+      <Age />
+      <RelationWithHero />
+      <Species />
+      <Remarks>2年B組。「A」率いるクラスのみんなによっていじめられている。また、それが原因で文化祭が嫌になって、文化祭を駄目にすることを決定した。
+また、なぜ他クラスも巻き込もうとしたのか。それは、いじめられていることが周りに気づかれていなかったので、それの八つ当たり、また、気づかせようとしたため。</Remarks>
+      <Tags />
+      <Gender>Male</Gender>
+      <IsMale>true</IsMale>
+      <IsFemale>false</IsFemale>
+      <IsNoneGender>false</IsNoneGender>
+      <IsHermaphroditic>false</IsHermaphroditic>
+      <IsGenderNotObvious>false</IsGenderNotObvious>
+      <IsGenderOther>false</IsGenderOther>
+    </CharacterModel>
+    <CharacterModel>
+      <DeepPhycheModel />
+      <Id>3</Id>
+      <IsValid>false</IsValid>
+      <ColorBrush xsi:type="SolidColorBrush">
+        <Opacity>1</Opacity>
+        <Transform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </Transform>
+        <RelativeTransform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </RelativeTransform>
+        <Color>
+          <A>255</A>
+          <R>61</R>
+          <G>22</G>
+          <B>255</B>
+          <ScA>1</ScA>
+          <ScR>0.0466650873</ScR>
+          <ScG>0.008023193</ScG>
+          <ScB>1</ScB>
+        </Color>
+      </ColorBrush>
+      <LastNameRuby />
+      <FirstNameRuby />
+      <MiddleNameRuby />
+      <LastName>容疑者A</LastName>
+      <FirstName />
+      <MiddleName />
+      <NameOrder>FamilyPersonelBracketMiddle</NameOrder>
+      <IsShokatsuOrder>true</IsShokatsuOrder>
+      <IsBismarckOrder>false</IsBismarckOrder>
+      <IsRichelieuOrder>false</IsRichelieuOrder>
+      <NickName />
+      <Symbol>容A</Symbol>
+      <Age />
+      <RelationWithHero />
+      <Species />
+      <Remarks>「A」と同じクラス。「A」をいじめている。
+
+なぜ疑われたか。
+全校集会の時に本来ならば集まるところを、準備が間に合っていないところがあったので、その手伝いに行っていた。終わった時に、途中入室したため、「物的証拠Ⅱ」につながる。</Remarks>
+      <Tags />
+      <Gender>Male</Gender>
+      <IsMale>true</IsMale>
+      <IsFemale>false</IsFemale>
+      <IsNoneGender>false</IsNoneGender>
+      <IsHermaphroditic>false</IsHermaphroditic>
+      <IsGenderNotObvious>false</IsGenderNotObvious>
+      <IsGenderOther>false</IsGenderOther>
+    </CharacterModel>
+    <CharacterModel>
+      <DeepPhycheModel />
+      <Id>4</Id>
+      <IsValid>false</IsValid>
+      <ColorBrush xsi:type="SolidColorBrush">
+        <Opacity>1</Opacity>
+        <Transform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </Transform>
+        <RelativeTransform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </RelativeTransform>
+        <Color>
+          <A>255</A>
+          <R>200</R>
+          <G>0</G>
+          <B>0</B>
+          <ScA>1</ScA>
+          <ScR>0.577580452</ScR>
+          <ScG>0</ScG>
+          <ScB>0</ScB>
+        </Color>
+      </ColorBrush>
+      <LastNameRuby />
+      <FirstNameRuby />
+      <MiddleNameRuby />
+      <LastName>容疑者B</LastName>
+      <FirstName />
+      <MiddleName />
+      <NameOrder>FamilyPersonelBracketMiddle</NameOrder>
+      <IsShokatsuOrder>true</IsShokatsuOrder>
+      <IsBismarckOrder>false</IsBismarckOrder>
+      <IsRichelieuOrder>false</IsRichelieuOrder>
+      <NickName />
+      <Symbol>容B</Symbol>
+      <Age />
+      <RelationWithHero />
+      <Species />
+      <Remarks>なぜ疑われたか。
+全校集会の時にトイレに行っていた。途中入室したため、「物的証拠Ⅱ」につながる。</Remarks>
+      <Tags />
+      <Gender>Male</Gender>
+      <IsMale>true</IsMale>
+      <IsFemale>false</IsFemale>
+      <IsNoneGender>false</IsNoneGender>
+      <IsHermaphroditic>false</IsHermaphroditic>
+      <IsGenderNotObvious>false</IsGenderNotObvious>
+      <IsGenderOther>false</IsGenderOther>
+    </CharacterModel>
+    <CharacterModel>
+      <DeepPhycheModel />
+      <Id>5</Id>
+      <IsValid>false</IsValid>
+      <ColorBrush xsi:type="SolidColorBrush">
+        <Opacity>1</Opacity>
+        <Transform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </Transform>
+        <RelativeTransform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </RelativeTransform>
+        <Color>
+          <A>255</A>
+          <R>200</R>
+          <G>0</G>
+          <B>0</B>
+          <ScA>1</ScA>
+          <ScR>0.577580452</ScR>
+          <ScG>0</ScG>
+          <ScB>0</ScB>
+        </Color>
+      </ColorBrush>
+      <LastNameRuby />
+      <FirstNameRuby />
+      <MiddleNameRuby />
+      <LastName>その他</LastName>
+      <FirstName />
+      <MiddleName />
+      <NameOrder>FamilyPersonelBracketMiddle</NameOrder>
+      <IsShokatsuOrder>true</IsShokatsuOrder>
+      <IsBismarckOrder>false</IsBismarckOrder>
+      <IsRichelieuOrder>false</IsRichelieuOrder>
+      <NickName />
+      <Symbol>その他</Symbol>
+      <Age />
+      <RelationWithHero />
+      <Species />
+      <Remarks />
+      <Tags />
+      <Gender>Male</Gender>
+      <IsMale>true</IsMale>
+      <IsFemale>false</IsFemale>
+      <IsNoneGender>false</IsNoneGender>
+      <IsHermaphroditic>false</IsHermaphroditic>
+      <IsGenderNotObvious>false</IsGenderNotObvious>
+      <IsGenderOther>false</IsGenderOther>
+    </CharacterModel>
+  </CharacterModelCollection>
+  <PlaceModelCollection>
+    <PlaceModel>
+      <Id>1</Id>
+      <Name>名前のない場所</Name>
+      <IsValid>true</IsValid>
+    </PlaceModel>
+    <PlaceModel>
+      <Id>2</Id>
+      <Name>名前のない場所</Name>
+      <IsValid>true</IsValid>
+    </PlaceModel>
+    <PlaceModel>
+      <Id>3</Id>
+      <Name>名前のない場所</Name>
+      <IsValid>true</IsValid>
+    </PlaceModel>
+    <PlaceModel>
+      <Id>4</Id>
+      <Name>名前のない場所</Name>
+      <IsValid>true</IsValid>
+    </PlaceModel>
+    <PlaceModel>
+      <Id>5</Id>
+      <Name>名前のない場所</Name>
+      <IsValid>true</IsValid>
+    </PlaceModel>
+  </PlaceModelCollection>
+  <StoryFrameModelCollection>
+    <StoryFrameModel>
+      <Id>1</Id>
+      <PlaceId>1</PlaceId>
+      <Name>準備</Name>
+      <Remarks />
+      <Symbol>準備</Symbol>
+      <StartDateTime>2021-07-10T06:30:00</StartDateTime>
+      <EndDateTime>2021-07-10T08:00:00</EndDateTime>
+      <Tags />
+      <IsValid>false</IsValid>
+      <ColorBrush xsi:type="SolidColorBrush">
+        <Opacity>1</Opacity>
+        <Transform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </Transform>
+        <RelativeTransform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </RelativeTransform>
+        <Color>
+          <A>255</A>
+          <R>200</R>
+          <G>0</G>
+          <B>0</B>
+          <ScA>1</ScA>
+          <ScR>0.577580452</ScR>
+          <ScG>0</ScG>
+          <ScB>0</ScB>
+        </Color>
+      </ColorBrush>
+    </StoryFrameModel>
+    <StoryFrameModel>
+      <Id>2</Id>
+      <PlaceId>2</PlaceId>
+      <Name>全校集会</Name>
+      <Remarks />
+      <Symbol>全校集</Symbol>
+      <StartDateTime>2021-07-10T08:15:00</StartDateTime>
+      <EndDateTime>2021-07-10T09:00:00</EndDateTime>
+      <Tags />
+      <IsValid>false</IsValid>
+      <ColorBrush xsi:type="SolidColorBrush">
+        <Opacity>1</Opacity>
+        <Transform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </Transform>
+        <RelativeTransform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </RelativeTransform>
+        <Color>
+          <A>255</A>
+          <R>200</R>
+          <G>0</G>
+          <B>0</B>
+          <ScA>1</ScA>
+          <ScR>0.577580452</ScR>
+          <ScG>0</ScG>
+          <ScB>0</ScB>
+        </Color>
+      </ColorBrush>
+    </StoryFrameModel>
+    <StoryFrameModel>
+      <Id>3</Id>
+      <PlaceId>3</PlaceId>
+      <Name>発見・状況確認</Name>
+      <Remarks />
+      <Symbol>発見・</Symbol>
+      <StartDateTime>2021-07-10T09:00:00</StartDateTime>
+      <EndDateTime>2021-07-10T10:00:00</EndDateTime>
+      <Tags />
+      <IsValid>false</IsValid>
+      <ColorBrush xsi:type="SolidColorBrush">
+        <Opacity>1</Opacity>
+        <Transform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </Transform>
+        <RelativeTransform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </RelativeTransform>
+        <Color>
+          <A>255</A>
+          <R>200</R>
+          <G>0</G>
+          <B>0</B>
+          <ScA>1</ScA>
+          <ScR>0.577580452</ScR>
+          <ScG>0</ScG>
+          <ScB>0</ScB>
+        </Color>
+      </ColorBrush>
+    </StoryFrameModel>
+    <StoryFrameModel>
+      <Id>4</Id>
+      <PlaceId>4</PlaceId>
+      <Name>調査・推理</Name>
+      <Remarks />
+      <Symbol>調査・</Symbol>
+      <StartDateTime>2021-07-10T10:00:00</StartDateTime>
+      <EndDateTime>2021-07-10T15:00:00</EndDateTime>
+      <Tags />
+      <IsValid>false</IsValid>
+      <ColorBrush xsi:type="SolidColorBrush">
+        <Opacity>1</Opacity>
+        <Transform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </Transform>
+        <RelativeTransform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </RelativeTransform>
+        <Color>
+          <A>255</A>
+          <R>200</R>
+          <G>0</G>
+          <B>0</B>
+          <ScA>1</ScA>
+          <ScR>0.577580452</ScR>
+          <ScG>0</ScG>
+          <ScB>0</ScB>
+        </Color>
+      </ColorBrush>
+    </StoryFrameModel>
+    <StoryFrameModel>
+      <Id>5</Id>
+      <PlaceId>5</PlaceId>
+      <Name>犯人捜索</Name>
+      <Remarks />
+      <Symbol>犯人捜</Symbol>
+      <StartDateTime>2021-07-10T15:00:00</StartDateTime>
+      <EndDateTime>2021-07-10T16:00:00</EndDateTime>
+      <Tags />
+      <IsValid>false</IsValid>
+      <ColorBrush xsi:type="SolidColorBrush">
+        <Opacity>1</Opacity>
+        <Transform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </Transform>
+        <RelativeTransform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </RelativeTransform>
+        <Color>
+          <A>255</A>
+          <R>200</R>
+          <G>0</G>
+          <B>0</B>
+          <ScA>1</ScA>
+          <ScR>0.577580452</ScR>
+          <ScG>0</ScG>
+          <ScB>0</ScB>
+        </Color>
+      </ColorBrush>
+    </StoryFrameModel>
+  </StoryFrameModelCollection>
+  <ItemModelCollection>
+    <ItemModel>
+      <Id>1</Id>
+      <Name>人的証拠Ⅰ</Name>
+      <Remarks>先生A：全校集会の時に、外から物音。当人は教室からそれを聞き、外を見ると誰かが料理の材料を放り投げて、走り去っていくところが見えた。</Remarks>
+      <Symbol>人Ⅰ</Symbol>
+      <Kind>Arm</Kind>
+      <IsArms>true</IsArms>
+      <IsGuards>false</IsGuards>
+      <IsTool>false</IsTool>
+      <IsTechniques>false</IsTechniques>
+      <IsInfo>false</IsInfo>
+      <IsIdeology>false</IsIdeology>
+      <IsOrgs>false</IsOrgs>
+      <IsPlace>false</IsPlace>
+      <IsTheory>false</IsTheory>
+      <IsTimeline>false</IsTimeline>
+      <IsMislead>false</IsMislead>
+      <IsState>false</IsState>
+      <IsOralInstruction>false</IsOralInstruction>
+      <IsTaoYuanming>false</IsTaoYuanming>
+      <IsJingxi>false</IsJingxi>
+      <IsPocketBell>false</IsPocketBell>
+      <IsRomance>false</IsRomance>
+      <IsEtc>false</IsEtc>
+      <Tags />
+      <IsValid>false</IsValid>
+      <ColorBrush xsi:type="SolidColorBrush">
+        <Opacity>1</Opacity>
+        <Transform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </Transform>
+        <RelativeTransform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </RelativeTransform>
+        <Color>
+          <A>255</A>
+          <R>200</R>
+          <G>0</G>
+          <B>0</B>
+          <ScA>1</ScA>
+          <ScR>0.577580452</ScR>
+          <ScG>0</ScG>
+          <ScB>0</ScB>
+        </Color>
+      </ColorBrush>
+    </ItemModel>
+    <ItemModel>
+      <Id>2</Id>
+      <Name>人的証拠Ⅱ</Name>
+      <Remarks>モブA：全校集会の時に途中入室してきた子がいた。</Remarks>
+      <Symbol>人Ⅱ</Symbol>
+      <Kind>Arm</Kind>
+      <IsArms>true</IsArms>
+      <IsGuards>false</IsGuards>
+      <IsTool>false</IsTool>
+      <IsTechniques>false</IsTechniques>
+      <IsInfo>false</IsInfo>
+      <IsIdeology>false</IsIdeology>
+      <IsOrgs>false</IsOrgs>
+      <IsPlace>false</IsPlace>
+      <IsTheory>false</IsTheory>
+      <IsTimeline>false</IsTimeline>
+      <IsMislead>false</IsMislead>
+      <IsState>false</IsState>
+      <IsOralInstruction>false</IsOralInstruction>
+      <IsTaoYuanming>false</IsTaoYuanming>
+      <IsJingxi>false</IsJingxi>
+      <IsPocketBell>false</IsPocketBell>
+      <IsRomance>false</IsRomance>
+      <IsEtc>false</IsEtc>
+      <Tags />
+      <IsValid>false</IsValid>
+      <ColorBrush xsi:type="SolidColorBrush">
+        <Opacity>1</Opacity>
+        <Transform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </Transform>
+        <RelativeTransform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </RelativeTransform>
+        <Color>
+          <A>255</A>
+          <R>200</R>
+          <G>0</G>
+          <B>0</B>
+          <ScA>1</ScA>
+          <ScR>0.577580452</ScR>
+          <ScG>0</ScG>
+          <ScB>0</ScB>
+        </Color>
+      </ColorBrush>
+    </ItemModel>
+    <ItemModel>
+      <Id>3</Id>
+      <Name>人的証拠Ⅲ</Name>
+      <Remarks>全校集会の時に「A」、「犯人」がいなかった。</Remarks>
+      <Symbol>人Ⅲ</Symbol>
+      <Kind>Arm</Kind>
+      <IsArms>true</IsArms>
+      <IsGuards>false</IsGuards>
+      <IsTool>false</IsTool>
+      <IsTechniques>false</IsTechniques>
+      <IsInfo>false</IsInfo>
+      <IsIdeology>false</IsIdeology>
+      <IsOrgs>false</IsOrgs>
+      <IsPlace>false</IsPlace>
+      <IsTheory>false</IsTheory>
+      <IsTimeline>false</IsTimeline>
+      <IsMislead>false</IsMislead>
+      <IsState>false</IsState>
+      <IsOralInstruction>false</IsOralInstruction>
+      <IsTaoYuanming>false</IsTaoYuanming>
+      <IsJingxi>false</IsJingxi>
+      <IsPocketBell>false</IsPocketBell>
+      <IsRomance>false</IsRomance>
+      <IsEtc>false</IsEtc>
+      <Tags />
+      <IsValid>false</IsValid>
+      <ColorBrush xsi:type="SolidColorBrush">
+        <Opacity>1</Opacity>
+        <Transform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </Transform>
+        <RelativeTransform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </RelativeTransform>
+        <Color>
+          <A>255</A>
+          <R>200</R>
+          <G>0</G>
+          <B>0</B>
+          <ScA>1</ScA>
+          <ScR>0.577580452</ScR>
+          <ScG>0</ScG>
+          <ScB>0</ScB>
+        </Color>
+      </ColorBrush>
+    </ItemModel>
+    <ItemModel>
+      <Id>8</Id>
+      <Name>人的証拠Ⅳ</Name>
+      <Remarks>先生B：犯人の「全校集会の時に先生Bによって呼び出されていた。」というアリバイが嘘だと判明させる。
+
+
+
+
+
+
+
+
+
+
+職員室に存在</Remarks>
+      <Symbol>人Ⅳ</Symbol>
+      <Kind>Arm</Kind>
+      <IsArms>true</IsArms>
+      <IsGuards>false</IsGuards>
+      <IsTool>false</IsTool>
+      <IsTechniques>false</IsTechniques>
+      <IsInfo>false</IsInfo>
+      <IsIdeology>false</IsIdeology>
+      <IsOrgs>false</IsOrgs>
+      <IsPlace>false</IsPlace>
+      <IsTheory>false</IsTheory>
+      <IsTimeline>false</IsTimeline>
+      <IsMislead>false</IsMislead>
+      <IsState>false</IsState>
+      <IsOralInstruction>false</IsOralInstruction>
+      <IsTaoYuanming>false</IsTaoYuanming>
+      <IsJingxi>false</IsJingxi>
+      <IsPocketBell>false</IsPocketBell>
+      <IsRomance>false</IsRomance>
+      <IsEtc>false</IsEtc>
+      <Tags />
+      <IsValid>false</IsValid>
+      <ColorBrush xsi:type="SolidColorBrush">
+        <Opacity>1</Opacity>
+        <Transform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </Transform>
+        <RelativeTransform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </RelativeTransform>
+        <Color>
+          <A>255</A>
+          <R>200</R>
+          <G>0</G>
+          <B>0</B>
+          <ScA>1</ScA>
+          <ScR>0.577580452</ScR>
+          <ScG>0</ScG>
+          <ScB>0</ScB>
+        </Color>
+      </ColorBrush>
+    </ItemModel>
+    <ItemModel>
+      <Id>4</Id>
+      <Name>物的証拠Ⅰ</Name>
+      <Remarks>「犯人」のクラスのクラスLINEで「A」が具体的にどう「犯人」をいじめるかを指示している。
+
+これによって、「犯人」はいじめられていて、文化祭が嫌で、文化祭を駄目にすることを決定したと仮説が立つ。
+
+
+
+
+
+
+
+
+
+
+
+
+
+A君、犯人君の教室に存在</Remarks>
+      <Symbol>物Ⅰ</Symbol>
+      <Kind>Arm</Kind>
+      <IsArms>true</IsArms>
+      <IsGuards>false</IsGuards>
+      <IsTool>false</IsTool>
+      <IsTechniques>false</IsTechniques>
+      <IsInfo>false</IsInfo>
+      <IsIdeology>false</IsIdeology>
+      <IsOrgs>false</IsOrgs>
+      <IsPlace>false</IsPlace>
+      <IsTheory>false</IsTheory>
+      <IsTimeline>false</IsTimeline>
+      <IsMislead>false</IsMislead>
+      <IsState>false</IsState>
+      <IsOralInstruction>false</IsOralInstruction>
+      <IsTaoYuanming>false</IsTaoYuanming>
+      <IsJingxi>false</IsJingxi>
+      <IsPocketBell>false</IsPocketBell>
+      <IsRomance>false</IsRomance>
+      <IsEtc>false</IsEtc>
+      <Tags />
+      <IsValid>false</IsValid>
+      <ColorBrush xsi:type="SolidColorBrush">
+        <Opacity>1</Opacity>
+        <Transform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </Transform>
+        <RelativeTransform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </RelativeTransform>
+        <Color>
+          <A>255</A>
+          <R>200</R>
+          <G>0</G>
+          <B>0</B>
+          <ScA>1</ScA>
+          <ScR>0.577580452</ScR>
+          <ScG>0</ScG>
+          <ScB>0</ScB>
+        </Color>
+      </ColorBrush>
+    </ItemModel>
+    <ItemModel>
+      <Id>5</Id>
+      <Name>物的証拠Ⅱ（謎Ⅰ）</Name>
+      <Remarks>　１　２　３　４　５　６　７　８　９　１０１１
+A あ　か　さ　た　な　は　ま　や　ら　わ　ん
+B い　き　し　ち　に　ひ　み　　　り　
+C う　く　す　つ　ぬ　ふ　む　ゆ　る　　　゛
+D え　け　せ　て　ね　へ　め　　　れ
+E お　こ　そ　と　の　ほ　も　よ　ろ　を　゜
+
+上記の紙がどこかに掲示してある。以下のように指示する。
+(EX. あ・・・1A　じ・・・3B11C　ぱか・・・6A11E 2A) 
+
+ぶんかさい　こわす　　　という文面。
+
+6C11C 11A 2A 3A 1B    2E 10A 3C
+
+これによって誰かの計画的犯行だということが分かる。また、「B」の文字が特徴的。物的証拠Ⅳにつながる。
+
+
+
+
+
+
+
+
+
+
+
+
+A君、犯人君の教室に存在</Remarks>
+      <Symbol>物Ⅱ</Symbol>
+      <Kind>Arm</Kind>
+      <IsArms>true</IsArms>
+      <IsGuards>false</IsGuards>
+      <IsTool>false</IsTool>
+      <IsTechniques>false</IsTechniques>
+      <IsInfo>false</IsInfo>
+      <IsIdeology>false</IsIdeology>
+      <IsOrgs>false</IsOrgs>
+      <IsPlace>false</IsPlace>
+      <IsTheory>false</IsTheory>
+      <IsTimeline>false</IsTimeline>
+      <IsMislead>false</IsMislead>
+      <IsState>false</IsState>
+      <IsOralInstruction>false</IsOralInstruction>
+      <IsTaoYuanming>false</IsTaoYuanming>
+      <IsJingxi>false</IsJingxi>
+      <IsPocketBell>false</IsPocketBell>
+      <IsRomance>false</IsRomance>
+      <IsEtc>false</IsEtc>
+      <Tags />
+      <IsValid>false</IsValid>
+      <ColorBrush xsi:type="SolidColorBrush">
+        <Opacity>1</Opacity>
+        <Transform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </Transform>
+        <RelativeTransform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </RelativeTransform>
+        <Color>
+          <A>255</A>
+          <R>200</R>
+          <G>0</G>
+          <B>0</B>
+          <ScA>1</ScA>
+          <ScR>0.577580452</ScR>
+          <ScG>0</ScG>
+          <ScB>0</ScB>
+        </Color>
+      </ColorBrush>
+    </ItemModel>
+    <ItemModel>
+      <Id>6</Id>
+      <Name>物的証拠Ⅲ</Name>
+      <Remarks>文化祭の計画書（クラスの出し物について）が明らかに故意的にくしゃくしゃになって捨てられていた。
+
+これによって犯人は文化祭が嫌だったという仮説が立つ。
+
+
+
+
+
+
+
+
+
+A君、犯人君の教室に存在</Remarks>
+      <Symbol>物Ⅲ</Symbol>
+      <Kind>Arm</Kind>
+      <IsArms>true</IsArms>
+      <IsGuards>false</IsGuards>
+      <IsTool>false</IsTool>
+      <IsTechniques>false</IsTechniques>
+      <IsInfo>false</IsInfo>
+      <IsIdeology>false</IsIdeology>
+      <IsOrgs>false</IsOrgs>
+      <IsPlace>false</IsPlace>
+      <IsTheory>false</IsTheory>
+      <IsTimeline>false</IsTimeline>
+      <IsMislead>false</IsMislead>
+      <IsState>false</IsState>
+      <IsOralInstruction>false</IsOralInstruction>
+      <IsTaoYuanming>false</IsTaoYuanming>
+      <IsJingxi>false</IsJingxi>
+      <IsPocketBell>false</IsPocketBell>
+      <IsRomance>false</IsRomance>
+      <IsEtc>false</IsEtc>
+      <Tags />
+      <IsValid>false</IsValid>
+      <ColorBrush xsi:type="SolidColorBrush">
+        <Opacity>1</Opacity>
+        <Transform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </Transform>
+        <RelativeTransform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </RelativeTransform>
+        <Color>
+          <A>255</A>
+          <R>200</R>
+          <G>0</G>
+          <B>0</B>
+          <ScA>1</ScA>
+          <ScR>0.577580452</ScR>
+          <ScG>0</ScG>
+          <ScB>0</ScB>
+        </Color>
+      </ColorBrush>
+    </ItemModel>
+    <ItemModel>
+      <Id>7</Id>
+      <Name>物的証拠Ⅳ</Name>
+      <Remarks>物的証拠Ⅱにおいて、暗号の「B」と、ふと見えた提出物の「2年B組」の「B」の文字が目に付く。
+これによって、犯人が「犯人」と特定できる。
+
+
+
+
+
+
+職員室に存在</Remarks>
+      <Symbol>物Ⅳ</Symbol>
+      <Kind>Arm</Kind>
+      <IsArms>true</IsArms>
+      <IsGuards>false</IsGuards>
+      <IsTool>false</IsTool>
+      <IsTechniques>false</IsTechniques>
+      <IsInfo>false</IsInfo>
+      <IsIdeology>false</IsIdeology>
+      <IsOrgs>false</IsOrgs>
+      <IsPlace>false</IsPlace>
+      <IsTheory>false</IsTheory>
+      <IsTimeline>false</IsTimeline>
+      <IsMislead>false</IsMislead>
+      <IsState>false</IsState>
+      <IsOralInstruction>false</IsOralInstruction>
+      <IsTaoYuanming>false</IsTaoYuanming>
+      <IsJingxi>false</IsJingxi>
+      <IsPocketBell>false</IsPocketBell>
+      <IsRomance>false</IsRomance>
+      <IsEtc>false</IsEtc>
+      <Tags />
+      <IsValid>false</IsValid>
+      <ColorBrush xsi:type="SolidColorBrush">
+        <Opacity>1</Opacity>
+        <Transform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </Transform>
+        <RelativeTransform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </RelativeTransform>
+        <Color>
+          <A>255</A>
+          <R>200</R>
+          <G>0</G>
+          <B>0</B>
+          <ScA>1</ScA>
+          <ScR>0.577580452</ScR>
+          <ScG>0</ScG>
+          <ScB>0</ScB>
+        </Color>
+      </ColorBrush>
+    </ItemModel>
+    <ItemModel>
+      <Id>9</Id>
+      <Name>事実的証拠Ⅰ</Name>
+      <Remarks>現場１、現場２、現場３、そこから体育館まで移動するのには、走って約15分。
+
+
+
+上記のより、「B」のトイレの時間と「犯人」の犯行の時間がかぶっており、「B」の疑惑度が上がる。
+
+
+
+
+
+
+それぞれの現場から判明</Remarks>
+      <Symbol>事Ⅰ</Symbol>
+      <Kind>Arm</Kind>
+      <IsArms>true</IsArms>
+      <IsGuards>false</IsGuards>
+      <IsTool>false</IsTool>
+      <IsTechniques>false</IsTechniques>
+      <IsInfo>false</IsInfo>
+      <IsIdeology>false</IsIdeology>
+      <IsOrgs>false</IsOrgs>
+      <IsPlace>false</IsPlace>
+      <IsTheory>false</IsTheory>
+      <IsTimeline>false</IsTimeline>
+      <IsMislead>false</IsMislead>
+      <IsState>false</IsState>
+      <IsOralInstruction>false</IsOralInstruction>
+      <IsTaoYuanming>false</IsTaoYuanming>
+      <IsJingxi>false</IsJingxi>
+      <IsPocketBell>false</IsPocketBell>
+      <IsRomance>false</IsRomance>
+      <IsEtc>false</IsEtc>
+      <Tags />
+      <IsValid>false</IsValid>
+      <ColorBrush xsi:type="SolidColorBrush">
+        <Opacity>1</Opacity>
+        <Transform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </Transform>
+        <RelativeTransform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </RelativeTransform>
+        <Color>
+          <A>255</A>
+          <R>200</R>
+          <G>0</G>
+          <B>0</B>
+          <ScA>1</ScA>
+          <ScR>0.577580452</ScR>
+          <ScG>0</ScG>
+          <ScB>0</ScB>
+        </Color>
+      </ColorBrush>
+    </ItemModel>
+    <ItemModel>
+      <Id>10</Id>
+      <Name>学校の地図</Name>
+      <Remarks>事実的証拠Ⅰを証明するためのアイテム。
+
+
+
+
+
+
+B君の教室に存在</Remarks>
+      <Symbol>地図</Symbol>
+      <Kind>Arm</Kind>
+      <IsArms>true</IsArms>
+      <IsGuards>false</IsGuards>
+      <IsTool>false</IsTool>
+      <IsTechniques>false</IsTechniques>
+      <IsInfo>false</IsInfo>
+      <IsIdeology>false</IsIdeology>
+      <IsOrgs>false</IsOrgs>
+      <IsPlace>false</IsPlace>
+      <IsTheory>false</IsTheory>
+      <IsTimeline>false</IsTimeline>
+      <IsMislead>false</IsMislead>
+      <IsState>false</IsState>
+      <IsOralInstruction>false</IsOralInstruction>
+      <IsTaoYuanming>false</IsTaoYuanming>
+      <IsJingxi>false</IsJingxi>
+      <IsPocketBell>false</IsPocketBell>
+      <IsRomance>false</IsRomance>
+      <IsEtc>false</IsEtc>
+      <Tags />
+      <IsValid>false</IsValid>
+      <ColorBrush xsi:type="SolidColorBrush">
+        <Opacity>1</Opacity>
+        <Transform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </Transform>
+        <RelativeTransform xsi:type="MatrixTransform">
+          <Matrix>
+            <M11>1</M11>
+            <M12>0</M12>
+            <M21>0</M21>
+            <M22>1</M22>
+            <OffsetX>0</OffsetX>
+            <OffsetY>0</OffsetY>
+          </Matrix>
+        </RelativeTransform>
+        <Color>
+          <A>255</A>
+          <R>200</R>
+          <G>0</G>
+          <B>0</B>
+          <ScA>1</ScA>
+          <ScR>0.577580452</ScR>
+          <ScG>0</ScG>
+          <ScB>0</ScB>
+        </Color>
+      </ColorBrush>
+    </ItemModel>
+  </ItemModelCollection>
+  <TagModelCollection />
+  <CharaMarkCollection />
+  <StoryFrameMarkCollection />
+  <CharacterStoryRelationModelCollection>
+    <CharacterStoryRelationModel>
+      <CharacterId>1</CharacterId>
+      <StoryFrameId>1</StoryFrameId>
+      <Position>未設定</Position>
+    </CharacterStoryRelationModel>
+    <CharacterStoryRelationModel>
+      <CharacterId>1</CharacterId>
+      <StoryFrameId>2</StoryFrameId>
+      <Position>未設定</Position>
+    </CharacterStoryRelationModel>
+    <CharacterStoryRelationModel>
+      <CharacterId>1</CharacterId>
+      <StoryFrameId>3</StoryFrameId>
+      <Position>未設定</Position>
+    </CharacterStoryRelationModel>
+    <CharacterStoryRelationModel>
+      <CharacterId>2</CharacterId>
+      <StoryFrameId>3</StoryFrameId>
+      <Position>未設定</Position>
+    </CharacterStoryRelationModel>
+    <CharacterStoryRelationModel>
+      <CharacterId>3</CharacterId>
+      <StoryFrameId>3</StoryFrameId>
+      <Position>未設定</Position>
+    </CharacterStoryRelationModel>
+    <CharacterStoryRelationModel>
+      <CharacterId>4</CharacterId>
+      <StoryFrameId>3</StoryFrameId>
+      <Position>未設定</Position>
+    </CharacterStoryRelationModel>
+    <CharacterStoryRelationModel>
+      <CharacterId>1</CharacterId>
+      <StoryFrameId>4</StoryFrameId>
+      <Position>未設定</Position>
+    </CharacterStoryRelationModel>
+    <CharacterStoryRelationModel>
+      <CharacterId>5</CharacterId>
+      <StoryFrameId>4</StoryFrameId>
+      <Position>未設定</Position>
+    </CharacterStoryRelationModel>
+    <CharacterStoryRelationModel>
+      <CharacterId>1</CharacterId>
+      <StoryFrameId>5</StoryFrameId>
+      <Position>未設定</Position>
+    </CharacterStoryRelationModel>
+    <CharacterStoryRelationModel>
+      <CharacterId>2</CharacterId>
+      <StoryFrameId>5</StoryFrameId>
+      <Position>未設定</Position>
+    </CharacterStoryRelationModel>
+    <CharacterStoryRelationModel>
+      <CharacterId>3</CharacterId>
+      <StoryFrameId>5</StoryFrameId>
+      <Position>未設定</Position>
+    </CharacterStoryRelationModel>
+    <CharacterStoryRelationModel>
+      <CharacterId>4</CharacterId>
+      <StoryFrameId>5</StoryFrameId>
+      <Position>未設定</Position>
+    </CharacterStoryRelationModel>
+    <CharacterStoryRelationModel>
+      <CharacterId>5</CharacterId>
+      <StoryFrameId>5</StoryFrameId>
+      <Position>未設定</Position>
+    </CharacterStoryRelationModel>
+  </CharacterStoryRelationModelCollection>
+  <ItemStoryRelationModelCollection />
+  <TimelineEventModelCollection>
+    <TimelineEventModel>
+      <Id>1</Id>
+      <StartDateTime>2021-07-10T08:20:00</StartDateTime>
+      <EndDateTime>2021-07-10T08:25:00</EndDateTime>
+      <Title>犯行Ⅰ</Title>
+      <Participants>
+        <int>2</int>
+      </Participants>
+    </TimelineEventModel>
+    <TimelineEventModel>
+      <Id>2</Id>
+      <StartDateTime>2021-07-10T08:30:00+09:00</StartDateTime>
+      <EndDateTime>2021-07-10T08:35:00</EndDateTime>
+      <Title>犯行Ⅱ</Title>
+      <Participants>
+        <int>2</int>
+      </Participants>
+    </TimelineEventModel>
+    <TimelineEventModel>
+      <Id>3</Id>
+      <StartDateTime>2021-07-10T08:40:00</StartDateTime>
+      <EndDateTime>2021-07-10T08:45:00</EndDateTime>
+      <Title>犯行Ⅲ</Title>
+      <Participants>
+        <int>2</int>
+      </Participants>
+    </TimelineEventModel>
+    <TimelineEventModel>
+      <Id>4</Id>
+      <StartDateTime>2021-07-10T08:15:00</StartDateTime>
+      <EndDateTime>2021-07-10T08:45:00</EndDateTime>
+      <Title>こっそり別のところでの準備</Title>
+      <Participants>
+        <int>3</int>
+      </Participants>
+    </TimelineEventModel>
+    <TimelineEventModel>
+      <Id>5</Id>
+      <StartDateTime>2021-07-10T08:20:00+09:00</StartDateTime>
+      <EndDateTime>2021-07-10T08:40:00</EndDateTime>
+      <Title>腹痛</Title>
+      <Participants>
+        <int>4</int>
+      </Participants>
+    </TimelineEventModel>
+    <TimelineEventModel>
+      <Id>6</Id>
+      <StartDateTime>2021-07-10T08:34:00+09:00</StartDateTime>
+      <EndDateTime>2021-07-10T08:36:00</EndDateTime>
+      <Title>モブB:人的証拠Ⅲ</Title>
+      <Participants>
+        <int>5</int>
+      </Participants>
+    </TimelineEventModel>
+    <TimelineEventModel>
+      <Id>7</Id>
+      <StartDateTime>2021-07-10T08:14:00+09:00</StartDateTime>
+      <EndDateTime>2021-07-10T08:16:00+09:00</EndDateTime>
+      <Title>モブA:人的証拠Ⅱ</Title>
+      <Participants>
+        <int>5</int>
+      </Participants>
+    </TimelineEventModel>
+    <TimelineEventModel>
+      <Id>8</Id>
+      <StartDateTime>2021-07-10T08:22:00+09:00</StartDateTime>
+      <EndDateTime>2021-07-10T08:24:00+09:00</EndDateTime>
+      <Title>先生A:人的証拠Ⅰ</Title>
+      <Participants>
+        <int>5</int>
+      </Participants>
+    </TimelineEventModel>
+    <TimelineEventModel>
+      <Id>9</Id>
+      <StartDateTime>2021-07-10T08:46:30+09:00</StartDateTime>
+      <EndDateTime>2021-07-10T08:47:00+09:00</EndDateTime>
+      <Title>途中入室</Title>
+      <Participants>
+        <int>2</int>
+      </Participants>
+    </TimelineEventModel>
+    <TimelineEventModel>
+      <Id>10</Id>
+      <StartDateTime>2021-07-10T09:00:00</StartDateTime>
+      <EndDateTime>2021-07-10T09:30:00</EndDateTime>
+      <Title>事件の認識</Title>
+      <Participants>
+        <int>1</int>
+      </Participants>
+    </TimelineEventModel>
+    <TimelineEventModel>
+      <Id>11</Id>
+      <StartDateTime>2021-07-10T09:35:00</StartDateTime>
+      <EndDateTime>2021-07-10T10:00:00</EndDateTime>
+      <Title>犯人、A、Bを呼び出し、アリバイ確認</Title>
+      <Participants>
+        <int>1</int>
+      </Participants>
+    </TimelineEventModel>
+  </TimelineEventModelCollection>
+  <DocumentModel>
+    <Text>ここはとある高校...
+
+今日は、三年に一度の記念すべき文化祭の日である。
+
+私は〇〇。この学校の二年生。治安維持委員に入っている。
+
+治安維持委員は、この学校の治安を守る役目があるので、今日の文化祭では、目を光らせて皆を見守ってなくちゃいけないんだ。
+
+何も起きなければいいのだけど...
+
+「・・・であるからして、今日の文化祭は・・・」
+
+今は文化祭を開くにあたっての全校集会中だ。
+
+にしても・・・暇だ。
+
+
+＿＿＿＿＿＿＿＿＿＿
+
+
+さて、全校集会も終わったことだし、いよいよ文化祭が開かれ・・・
+
+「失礼します！！！う、うちのクラスの材料が！！！」
+
+凄い剣幕である子が委員会室に入ってきた。
+
+「・どうしたんですか？
+　・材料・・・？
+　・落ち着いて・・・」
+
+「っと、とにかく！一度来てください！」
+
+その生徒がそういうと、自分の手を引いて「そこ」まで連れていかれた。
+
+＿＿＿＿＿＿＿＿＿＿
+
+「うわぁ・・・」
+
+
+そこは校舎外。天気は晴天。しかし、その場の雰囲気は重々しい。
+
+なんと、地面に「食材」がバラまかれていた。
+
+恐らく、食品を提供する店でも開くつもりだったのだろうその「食材」が、もはや食材としての価値が０になってしまっていた。
+
+「どうしよう・・・」
+
+「もっと注意して保管しておくべきだったな・・・」
+
+周りからそんな声が聞こえる。ということは、保管の仕方が悪かったのか。ならば自己責任なのだが・・・
+
+「・「指示を仰がせる」・・・とりあえず、先生に報告して指示を仰いで下さい。この食品は恐らくもう出せないので・・・抜いてもらうことになるのかな・・・
+　・「始末書を書くように促す」・・・まぁ、どうにもなりませんね・・・洗って出すにしろ・・・・うーん・・・・早急に始末書を書いてください。
+　・「励ます」・・・大丈夫ですよ。流石に、この食材はどうにもなりませんが・・・この食材が入っていなくても、おいしいことは変わりないと思いますよ！」
+
+「はい・・・」
+
+自分はそういうと、委員会室に向かった。
+
+＿＿＿＿＿＿＿＿＿＿
+
+早速厄介なことが起きてしまったな・・・なんて思いつつ、また、このようなときに、このような「事故」が起きるのは珍しいのだろうか・・・と、委員会室に入ると、
+
+「あ・・・！！！やっと来た！！！少し来てください！！！」
+
+生徒が言った。またか。と、自分が返事をする間もなく、生徒会室にいた生徒は自分の手を引いて、自分はまた走ることになった。
+
+＿＿＿＿＿＿＿＿＿＿
+
+「・・・」
+
+現場に着いた自分は、既視感を抱いた。
+
+なんと、こちらも飲食店を出そうしていた。
+
+また、同様に、地面に散らばった食材も、既視感を抱かせる要因となった。
+
+「・・・誰がこんなこと・・・」
+
+自分を連れてきた生徒がつぶやいた。
+
+「・誰とは・・・？
+　・え・・・？
+　・誰かの仕業と断定できるのですか・・・？」
+
+「（上・下の選択肢のとき）・・・明らかに。明らかにおかしいです。だって、この食材は、絶対にこうならないように保管していましたから・・・
+　（中の選択肢のとき）・・・おそらく、誰かの仕業なんです・・・私たちはこんな事故が起きないように細心の注意を払っていましたから・・・」
+
+「なるほど・・・」
+
+・・・つまり、誰かが、誰もいない時にこのようなことをした。ということだろうか。
+
+だけど、大体こういう時は事故であることがほとんどなんだ・・・だから・・・しょうがないけど、事故として処理させてもらおう。
+
+誰かがやったという確定情報もないし。
+
+「・・・わかりました。とりあえず、先生に話を通しておきます。この食材も・・・無理・・・ですかね。洗ってももう皆さんには衛生的に出せません。」
+
+「そんな・・・」
+
+しょうがない・・・しょうがない。身内でならば、洗って出せたかもしれないが、文化祭なので、学校外の人たちもこの学校に来て、この文化祭を楽しむだから、そんなことは許されない。
+
+自分は、このクラス、そして、さっきのクラスのことを気の毒に思いながら、また委員会室に戻ろうとした。
+
+＿＿＿＿＿＿＿＿＿＿
+
+・・・ん？
+
+今、自分は委員会室へ向かっていたのだけど、その途中で人だまりを見つけた。
+
+今は開店準備中なので、人だまりができるのは当たり前なのだが・・・それとは違う人だまりができていた。
+
+自分は、様子を伺いにそこへ足を進めた。
+
+「・・・どうしたんですか？」
+
+自分がそこに集まっていた人の一人に話しかける。
+
+「・・・なんか、全校集会の時に、食べ物が地面にぶちまけられていたみたいで。」
+
+「・・・ん？」
+
+・・・再び既視感。
+
+同じ時間に、同じ状況で、同じ事故が起こった。
+
+これは・・・・事件だ。
+
+＿＿＿＿＿＿＿＿＿＿
+
+☆現状把握・事情聴取シーケンス
+
+さて、現状把握をしよう。
+
+自分たちは今日、学校に朝早くに来て、準備をしていた。
+
+そして、準備を一時中断し、体育館で全校集会をしていた。
+
+そのあと、全校集会が終わると、飲食を提供するクラス、計三クラスが荒らされていた。
+
+一クラス、また、二クラスまでは事故と言える。
+
+が、流石に三クラスも同時にこういったことが起きるとなると、流石に何者かによる仕業としか考えられない。
+
+さて、先ずは事情聴取からだ。生徒は全員体育館にいたので、目撃者がいることはあまり期待できないが・・・
+
+どのような人から聞こうか・・・
+
+・全校集会に出ていた生徒
+
+・荒らされていたクラスの生徒
+
+・全校集会に出ていなかった先生
+
+※選択肢が減っていく。最終的にはすべての選択肢を選択させる。
+
+＿＿＿＿＿＿＿＿＿＿
+・全校集会に出ていた生徒　の場合
+
+全校集会に出ていた生徒を聞こう。事件現場とは離れていたので、あまり目撃情報は期待できない。
+
+が、聞くだけ聞いてみよう。
+
+（移動中・・・）
+
+「・・・ということで、全校集会中に何か、不審なことはなかった？」
+
+自分は、とりあえず、いろんな人に聞いてみることにした。
+
+「うーん・・・特には・・・あ。」
+
+「僕、全校集会の時に、体育館の隅に立っていたんだけど、途中入室してきた子がいたのは覚えてるよ。」
+
+「あれは確か・・・「B」君・・・だったかな？」
+
+｛「具体的な時間とか、わかる？」
+
+　「あー、どうだっただろう・・・８：４０ぐらい？」
+　
+　「８：４０・・・ありがとう。」
+
+　全校集会は８：１５に始まり、９：００までだった。なので、約25分もいなかったということか・・・｝
+
+・・・進展だ。【B君が全校集会開始から約25分間、全校集会に出ず、どこかへ行っていた。】
+
+＿＿＿＿＿＿＿＿＿＿
+・荒らされていたクラスの生徒　の場合
+
+そうだ。荒らされていたクラスの生徒を中心に聞いていこう。
+
+闇雲に聞くよりも有益な情報が出てくるかもしれない。
+
+（移動中・・・）
+
+「・・・何か知ってることないかな？」
+
+「あー・・・そういえば、「A」君が全校集会に出てなかったな。」
+
+「なるほど・・・？」
+
+「あ、あとさ、「犯人」君もいなかったことない？」
+
+「あー、確かにいなかったいなかった。」
+
+「なるほど・・・ありがとう。」
+
+・・・進展だ。【「A」君と「犯人」君が全校集会のとき、いなかった。】
+
+＿＿＿＿＿＿＿＿＿＿
+・全校集会に出ていなかった先生　の場合
+
+もしかしたら、全校集会を出ずに、準備をしていた先生がいるかもしれない。その先生にも聞き込みをしていこう・・・
+
+（移動中・・・）
+
+自分は、先生に聞き込みを続け、全校集会に出ていない先生を特定し、その先生に何かなかったか聞くことにした。
+
+「先生、生徒が体育館で全校集会をしていた時、他の場所で何かなかったですか？」
+
+「うーん・・・それなんだけど・・・」
+
+「・・・誰かが走り去っていくのを見たね。」
+
+「・・・ほう。具体的に、どこをいつ、というのはわかりますか？」
+
+「あれは・・・確か８：２５ぐらいだったかな？そのぐらいに、駐輪場で見た。」
+
+「なるほど・・・」
+
+「それに、実はそれを見る前に、大きな音がして、その原因を辿るために音が鳴ったほうを見に行く途中に見たんだ。」
+
+「そして、その大きな音はおそらく、外で準備してた料理の材料が地面に落ちた音だった。」
+
+・・・進展だ。【全校集会の時、そこへいなかった人が現場付近を走り去っていた。】
+
+＿＿＿＿＿＿＿＿＿＿
+
+☆アリバイ聴取シーケンス
+
+さて、事情聴取はこれくらいでいいだろう。
+
+とりあえず、自分は事情聴取の時に名前が出てきた生徒を委員会室に呼び出すことにした。
+
+「「B」君、「A」君、「犯人」君、委員会室に至急来てください。」
+
+とりあえず、本人たちから色々聞くことにしよう。
+
+＿＿＿＿＿＿＿＿＿＿
+
+「さて、いきなり集まってもらってごめんなさい。少し聞きたいことがありまして。」
+
+A「なんだよ。俺も暇じゃないんだけど。準備がまだ終わってないんだよ。ったく、なんか荒らされてるしよぉ・・・」
+
+「・・・じゃあ、手短にさせていただきますね。」
+
+「あなたたち三人は・・・全校集会の時、何をしてた？」
+
+自分がそう尋ねると、
+
+B「え、俺はトイレ行ってただけだけど？腹痛かったんだよねー。」
+
+・・・？？？？
+
+「えっ、ちょ、まっ」
+
+A「・・・俺は友達の準備が終わってなかったから、そっちを手伝いに行ってた。」
+
+犯人「・・・僕は先生に呼び出されてて。そっちに行ってたかな。」
+
+ちょ、ちょちょ、整理しよう・・・・
+
+「A」君は、友達の準備に、
+
+「犯人」君は、先生に呼び出されて、
+
+「B」君は・・・トイレ？？
+
+※分岐してもいいかも
+
+「え、えっと、まず・・・「犯人」君は・・・どの先生に？」
+
+犯人「あ、えっと、B先生に呼び出されてたよ。」
+
+B先生に呼び出されていた・・・と。
+
+「えっと、じゃあ、A君は、どこで準備してたの？」
+
+A「・・・管理棟三階。」
+
+管理棟三階で準備・・・・
+
+「・・・じゃあ、三人は、途中から全校集会参加したりした？」
+
+A「・・・してない。」
+
+犯人「してないです。」
+
+B「うん。俺はしたね。腹痛いだけだったし。」
+
+・・・進展だ。
+
+・【「A」君は全校集会時、管理棟三階で、文化祭準備を続けていたらしい。途中入室はしていないらしい。】
+・【「犯人」君は全校集会時、B先生に呼び出されて、そちらで仕事をしていたらしい。途中入室はしていないらしい。】
+・【「B」君は全校集会時、トイレに籠っていたらしい。途中入室をしたらしい。】
+
+しかし、これらを証明する第三者の証言がない。
+
+信用するためには、第三者の証言が必要だ。
+
+＿＿＿＿＿＿＿＿＿＿
+
+☆調査シーケンス
+
+当人たちに、事件発生時、何をしていたかは聞いた。次は・・・
+
+・犯人を誰か特定する。　　　　　　→Bエンドへ
+・証拠となるようなものを集める。
+
+証拠となるようなものを集めること。
+
+犯人は誰か、あの三人のうちにいるかもしれないし、いないかもしれない。
+
+また、犯人の動機があったのか、それともなかったのか。それもわからない。
+
+なので、物的証拠があるか、色々のところを探すことが先決だろう。
+
+まだ、犯人を特定するのには早すぎる。
+
+さて、どこへ行こうか・・・・
+
+・B君のクラスの教室
+・A君、犯人君のクラスの教室
+・職員室
+（・それぞれの現場）
+
+※場所【それぞれの現場】は、B君のクラスの教室を探索したら解禁。
+
+※すべての場所を回らせる。（途中で証拠品を集めるのをやめるボタンは要検討。）
+
+＿＿＿＿＿＿＿＿＿＿
+
+・B君のクラスの教室　の場合
+
+Ⅰ.学校の見取り図
+
+Ⅰのとき
+
+これは・・・学校の見取り図？
+
+事件が起こった場所は、ココとココとココ。そして、体育館はココ。
+
+使えるかもしれないな。一応持っていこう。
+
+・・・進展だ。【学校の見取り図を手に入れた。】
+
+＿＿＿＿＿＿＿＿＿＿
+
+・A君、犯人君のクラスの教室　の場合
+
+Ⅰ.クシャクシャの文化祭計画書
+Ⅱ.謎Ⅰの暗号
+Ⅲ.謎Ⅰの暗号解読書
+Ⅳ.「犯人」君が虐められていた決定的証拠
+
+Ⅰのとき
+
+これは・・・文化祭の出し物の計画書？名前は・・・「A」君か。
+
+こんなにクシャクシャに丸められているということは、必要なくなったのか？
+
+一応、これも持っておこう。
+
+・・・進展だ。【クシャクシャに丸められた「A」君の文化祭計画書】
+
+
+Ⅱのとき
+
+これは・・・？
+
+6C 11C 11A 2A 3A 1B    2E 10A 3C・・・？
+
+暗号か何かか・・・？
+
+にしても、クラスで暗号って・・・よっぽど知られたくないことなのか？
+
+・・・進展だ。【謎の暗号を手に入れた。】
+
+Ⅲのとき
+
+これは・・・？
+
+何かの表みたいだ。まるで十六進法の文字の指定方法みたいだ・・・
+
+・・・進展だ。【表を手に入れた。】
+
+
+Ⅳのとき
+
+これは・・・
+
+誰かのスマートフォンだ。こんな、机に置いてあるなんて・・・文化祭当日は先生が教室に来ないことをいいことに・・・
+
+・・・ん？
+
+「A」『文化祭、頑張ろうな。俺、正直めっちゃ楽しみなんだよ。』
+
+『なぁ、当日さ、文化祭終わったら打ち上げやろうぜ。』
+
+『いいね。』
+
+『さんせー。』
+
+「A」『あ、「犯人」の奴は呼ぶなよ。アイツがいると打ち上げも台無しだしな。』
+
+『ひっどw事実だけどw』
+
+『それなw』
+
+『てか、最初から呼ぶつもりなかったしw』
+
+・・・これは・・・そうか・・・・
+
+・・・進展だ。【「犯人」君はクラスからいじめられている。また、「A」君その主犯格かもしれない。】
+
+
+＿＿＿＿＿＿＿＿＿＿
+
+・職員室　の場合
+
+Ⅰ.先生Bの証言
+Ⅱ.宿題として提出された「犯人」のノート
+
+Ⅰのとき
+
+そういえば、「犯人」君は先生Bに呼び出されていたんだったな。
+
+ついでにB先生にどういった用件で「犯人」君を呼び出したのか聞いてみようか。
+
+「先生、お尋ねしたいことがあるんですけど。」
+
+「おう、なんだ？」
+
+「どうやら、全校集会の時、「犯人」君を呼び出していたそうなのですけど、どういった用件だったのでしょうか。」
+
+「・・・？俺は「犯人」を呼び出してはないぞ？」
+
+「えっ・・・」
+
+・・・進展だ。【「犯人」はB先生に呼び出されていなかった。】
+
+
+Ⅱのとき
+
+・・・ん？これは・・・
+
+「犯人」君のノートだ。恐らく宿題として提出したのだろう。
+
+「あ、おい。そこの子。これ、二年B組にまで届けてくれ。」
+
+「え、あ、はい。」
+
+先生はそういうと、「犯人」君のノートを自分に手渡してきた。
+
+・・・進展だ。【「犯人」のノートを手に入れた。】
+＿＿＿＿＿＿＿＿＿＿
+
+（・それぞれの現場）　の場合
+
+それぞれの現場に行って、何か探すのは必須かな。やっぱり。
+
+じゃあ、具体的にどうする？
+
+・犯人が通るであろうルートをたどって、時間を計る。
+・それぞれの現場で証拠品がないか調べる
+
+※すべて選択させる。
+
+・犯人が通るであろうルートをたどる　の場合
+
+犯人の気持ちになるのは大事なんじゃないかと思う。
+
+ということで、自分は犯人がたどるであろう路を、地図を参考にたどった。
+
+すると、約25分で現場を3つ回れて、体育館に戻ってこれた。
+
+・・・進展だ。【事件現場を三つ回り、体育館に戻るまでの時間は約25分】
+
+
+・それぞれの現場で証拠品がないかを調べる　の場合。
+
+やはり、現場に何かを落としているかもしれない。なので、それぞれの現場で証拠品を探すことにしたが・・・
+
+もうすでに落とされた食品は片づけられ、また、開店しているため、証拠品も痕跡もそこにはなかった。
+
+＿＿＿＿＿＿＿＿＿
+
+☆推理シーケンス
+
+{大筋について・・・
+　「犯人」は、クラスのみんなからいじめられていた。また、そのいじめはとても陰湿なもので、他クラスや、担任、先生には認知されていなかった。
+　よって、「犯人」は、クラスのみんなからいじめられていて、また、周りにそれを気付いてもらえないことに憤慨して、文化祭を壊そうとすることを決行。
+　また、他クラスも襲撃したのは、上記の理由のほかに、「A」が全校集会の時に体育館に行かずに、準備することを知っていたため、「A」に濡れ衣を着せようとした。
+　また、「A」は「犯人」がやったということに薄々勘づいているが、「A」が「犯人」が犯人だと言ってしまえば、同時に「犯人」を虐めていることがバレるために、どうにも言い出せない。また、「犯人」はそれも考慮したうえで行動している。
+
+　「犯人」は、クラスでいじめを受けていた。
+　「犯人」は、文化祭を壊そうと計画。クラスのみんなに悟られないように、自分で暗号を作っていた。
+　　当日、「犯人」は、計画を実行に移す。全校集会が始まるとき、「犯人」は「A」が手伝いに行ってることを確認し、飲食店を中心に荒らして回る。
+　また、教室のゴミ箱には、「A」に濡れ衣を着せるために、「A」の名前を書いた文化祭計画書をクシャクシャにしてゴミ箱に入れる。}
+
+
+
+・・・さて、大方、証拠は集まったといえる。ここから、推理していこう。
+
+先ず、犯人が犯行をしていた時のことを考えよう。
+
+犯行をしていた時は・・・
+
+・全校集会前
+・全校集会中
+・全校集会後
+
+
+上・下の選択肢の時・・・　・・・いや、筋が合わないな。もう一度考えてみよう。証拠を見ればわかるだろう。
+
+中の選択肢の時・・・・・　・・・そうだ。全校集会中に犯行が起きた。じゃあ、その三人はその時、何をしていた？
+
+「A」は・・・
+
+・B先生に呼び出されていた。
+・トイレに行っていた。
+・管理棟三階で準備をしていた。
+
+上・中の選択肢の時・・・　・・・いや、筋が合わないな。もう一度考えてみよう。証拠を見ればわかるだろう。
+
+下の選択肢の時・・・・・　・・・そうだ。管理棟三階で準備を続行していたんだ。じゃあ、「犯人」は？
+
+・B先生に呼び出されていた。
+・トイレに行っていた。
+・管理棟三階で準備をしていた。
+
+中・下の選択肢の時・・・　・・・いや、筋が合わないな。もう一度考えてみよう。証拠を見ればわかるだろう。
+
+上の選択肢の時・・・・・　・・・そうだ。本人は、B先生に呼び出されていた。と言っていた。じゃあ、「B」は？
+
+・B先生に呼び出されていた。
+・トイレに行っていた。
+・管理棟三階で準備をしていた。
+
+上・下の選択肢の時・・・　・・・いや、筋が合わないな。もう一度考えてみよう。証拠を見ればわかるだろう。
+
+中の選択肢の時・・・・・　・・・そうだ。腹を壊して、トイレに行っていたらしい。
+
+じゃあ、これらに信憑性があるか考えていこう。
+
+・「A」について
+・「犯人」について
+・「B」について
+
+※すべて選択させる
+
+＿＿＿＿＿＿＿＿＿
+
+※これ以降の「不正解」選択肢は、「筋が合わない・・・どうやら推理が違うようだ。」とする。また、分岐は別画像を参照すること。（文のとおりが悪い場合、変える場合あり。）
+
+「A」のとき
+
+「A」は管理棟三階で準備を続行していた。それを裏付ける証拠はあっただろうか。
+
+・【「A」君と「犯人」君が全校集会のとき、いなかった。】☆
+・【謎の暗号を手に入れた。】
+・【全校集会の時、そこへいなかった人が現場付近を走り去っていた。】
+
+
+・・・そうだ。「A」君と「犯人」君と、おんなじクラスの人が、そんなことを言っていたな。
+
+これは、裏付ける証拠になる。
+
+・・・いや、他に何かあるだろうか。
+
+・きっと気のせいだろう。☆
+・【クシャクシャに丸められた「A」君の文化祭計画書】
+・【全校集会の時、そこへいなかった人が現場付近を走り去っていた。】
+
+・・・いや、気のせいだな。
+
+
+「犯人」のとき
+
+「犯人」はB先生に呼び出されていたのだったな。これを裏付ける証拠はあっただろうか。
+
+・【事件現場を三つ回り、体育館に戻るまでの時間は約25分】
+・【学校の見取り図を手に入れた。】
+・【「A」君と「犯人」君が全校集会のとき、いなかった。】☆
+
+・・・そうだ。「A」君と「犯人」君と、おんなじクラスの人が、そんなことを言っていたな。
+
+・・・？待てよ？何か、忘れていたような気がする。
+
+・どうやら、気のせい。
+・【「犯人」君はクラスからいじめられている。また、「A」君その主犯格かもしれない。】
+・【「犯人」はB先生に呼び出されていなかった。】☆
+
+・・・そうだ。B先生に聞いたとき、「犯人」君は呼び出されていなかったんだ。
+
+つまり、「犯人」君は嘘をついていたことになる。
+
+この情報は覚えておこう。
+
+
+「B」ののとき
+
+「B」はトイレに行っていたのだったな。それを裏付ける証拠はあっただろうか。
+
+・【全校集会の時、そこへいなかった人が現場付近を走り去っていた。】
+・【B君が全校集会開始から約25分間、全校集会に出ず、どこかへ行っていた。】☆
+・【「犯人」のノートを手に入れた。】
+
+全校集会に出ていた人が、「B」君が途中入室していた。本人も、「途中から集会に参加した。」と言っていたし、これが裏付ける証拠になるだろう。
+
+・・・しかし、何か引っかかる。
+
+・気のせいだ。
+・【事件現場を三つ回り、体育館に戻るまでの時間は約25分】☆
+・【「A」君と「犯人」君が全校集会のとき、いなかった。】
+
+・・・そうじゃないか。「B」君は25分間トイレに籠っていた。だけど、自分も何も調査しなかったわけではない。
+
+・・・犯行をした推定時間と被っている。これは、偶然なのだろうか・・・？
+
+
+＿＿＿＿＿＿＿＿＿＿
+
+
+次は証拠品について見ていこう。
+
+・【クシャクシャに丸められた「A」君の文化祭計画書】
+↓
+・【謎の暗号を手に入れた。】
+
+※順番に選択させる
+
+
+クシャクシャに・・・のとき
+
+これは・・・「A」君の文化祭の計画書だ。そういえば、クシャクシャにされており、さらにはごみ箱に捨てられていたな。
+
+これから考えられることは・・・
+
+・何者かが「A」君の計画書を捨てた。
+・「A」君が犯人。
+・「A」君は文化祭に消極的な気持ちかもしれない。☆
+
+「A」君は・・・文化祭をやりたくなかったのか？
+
+それを裏付ける証拠はあったっけ・・・
+
+・「A」君のクラスLINE。☆
+・証拠はなかった。
+・「A」君は全校集会の時も準備していた。
+
+もう一度、「A」君のクラスLINEを見てみよう。
+
+
+「A」『文化祭、頑張ろうな。俺、正直めっちゃ楽しみなんだよ。』
+
+『なぁ、当日さ、文化祭終わったら打ち上げやろうぜ。』
+
+『いいね。』
+
+『さんせー。』
+
+「A」『あ、「犯人」の奴は呼ぶなよ。アイツがいると打ち上げも台無しだしな。』
+
+『ひっどw事実だけどw』
+
+『それなw』
+
+『てか、最初から呼ぶつもりなかったしw』
+
+これを見るに、「A」君は文化祭のことを楽しみにしていたみたいだ。
+
+ということは、なんで文化祭の計画書をこんなにしてるんだろう・・・明らかに、故意にしか見えないんだけど・・・
+
+
+謎の暗号　のとき
+
+これは・・・「A」君と「犯人」君のクラスにあった暗号だ。
+
+解読できそうにないけど・・・なにかあったかな？
+
+・なにもなかった。
+・十六進数を用いる。
+・同じ教室内にあった表を用いる。☆
+
+そういえば、こんな表があったな。
+
+・・・ん？これ、うまく指示されてないかな？少し、解いてみようか。
+
+「ぶんかさい　こわす・・・？」
+
+文化祭、壊す。これが暗号の内容だった。
+
+つまり、今回の事件は、何者かによる計画的犯行だったのか・・・？
+
+・・・そういえば、この暗号の紙にある「Ｂ」って・・・
+
+・気のせいか。
+・学校の見取り図
+・「犯人」のノート☆
+
+・・・「犯人」君のノートの文字に似てるな。
+
+まぁ、いいか。そんなこと、今は関係ない。
+
+
+
+
+＿＿＿＿＿＿＿＿＿＿
+
+証拠から推測できるのはこれぐらいか・・・
+
+ここから、犯人がだれか特定しなければならない。
+
+自分は・・・誰を犯人だと断定する？
+
+・「A」を犯人と断定する。　　　　→Ａエンドへ
+・「犯人」を犯人と断定する。　　 →トゥルーエンドへ
+・「B」を犯人と断定する。　　　　→Ｂエンドへ
+
+※重要分岐。
+
+＿＿＿＿＿＿＿＿＿＿
+
+Ｂエンド
+
+自分は、「B」を犯人だと断定し、「B」君を呼び出した。
+
+「・・・「B」君、君がやったんでしょう？」
+
+「え？待ってくれよ。俺はトイレに行ってたって・・・」
+
+「にしては不自然な点が多すぎるんですよ。誰もあなたのことを全校集会に参加するまでは見てなかった点から、あなたの言い分はアリバイとして成り立ちません。」
+
+「また、あなたがトイレに行っていた時間と、自分が計測した、今回の事件にかかるであろう時間と一致してるんですよ。これは偶然ではありませんね？」
+
+「そんな・・・本当なのに・・・」
+
+「とにかく、文化祭をするにあたって、あまり支障はありませんでしたが、こう言ったことをするのは、特別指導の対象です。この後、生徒指導室に出頭するように。」
+
+「・・・」
+
+これで、この事件は一件落着だ。
+
+・・・その後、「B」君は特別指導を受け、文化祭は終わった。
+
+しかし・・・この数週間後、「犯人」君が自殺したのだという。
+
+彼の遺書には、こう綴られていた。
+
+「僕はクラスのみんなからいじめを受けていました。もう限界です。
+
+　文化祭の後から、さらにエスカレートして、これまでは耐えられていましたが、もう無理です。
+
+　最後まで、気付いてもらえなくて、文化祭の時に行動しましたが、それでも気付いてもらえませんでした。
+
+　「A」君と、クラスのみんな、そして、気付かなかった愚かな人たちを恨みます。さようなら。」
+
+彼は、文化祭の時に行動に移したのだという。そして、それに気づかなかった人たちを恨む。つまりは、自分のこと。
+
+自分がもっと、しっかりしていれば、このようなことは避けられたはずなのに・・・・
+
+・・・自分は、どこで判断を誤ってしまったのだろうか。
+
+BAD END
+
+＿＿＿＿＿＿＿＿＿＿
+
+Ａエンド
+
+自分は、「A」を犯人だと断定し、呼び出した。
+
+「・・・「A」君、そういったことは、してはダメですよ。」
+
+「・・・は？何のことだ？」
+
+「・・・そんなことをしては、悲しみますよ。相手方の気持ちを考えたことはあるんですか？」
+
+「・・・ふん。」
+
+「認めてくれますね？」
+
+「・・・もう、取り返しがつかねぇんだよ・・・しょうがねぇんだ・・・」
+
+「・・・俺だって、最初は、出来心だったんだよ・・・」
+
+？出来心？
+
+「・・・最初は、悪ふざけで、「犯人」のやつをからかってたんだ・・・だけど、クラスのやつらがどんどんエスカレートさせちまった・・・」
+
+「は？ちょ、」
+
+「ホントにすまねぇ。俺も、謝りたかったんだ。今まで、誰にも気づかれず、クラスのみんなでアイツを虐めてて・・・」
+
+「ホントはわかってたんだ。こんなことはいけねぇって。だけど、誰かに言われねぇと、止めることができなかった・・・」
+
+「・・・はは、俺も、まだまだガキだな。」
+
+「えっと、自分が話したいのはそうじゃなくって、」
+
+「・・・あぁ、わかってる。すぐに謝るさ。クラスのみんなも説得して、謝らせる。そんでアイツがまた馴染めるように俺が頑張る。こんなことは間違ってるから・・・」
+
+そういうと、「A」は、出ていってしまった。
+
+自分は、今の「A」の勘違いによって、今まで組み立ててきた推理が瓦解し、頭が真っ白になった。
+
+混乱した自分は、今回の一件を「事件」ではなく、「事故」として処理することにし、何もかも水に流すことにした。
+
+・・・後日、「犯人」君が、自分のところを訪ねてきた。
+
+何かと思えば、虐めのことに気づいてくれてありがとう。ということらしい。
+
+彼は、その後、少しずつではあるが、クラスに馴染んでいけているようだ。
+
+しかし結局、一連の犯行は、誰によるものかは未だにはっきりしていない。
+
+NOT BAD END
+
+＿＿＿＿＿＿＿＿＿＿
+
+トゥルーエンド
+
+自分は、「犯人」を犯人だと断定し、呼び出した。
+
+「・・・「犯人」君、君がやったのかい？」
+
+「・・・それはまたなぜ？」
+
+「・・・まず、あなたの教室にこんなものが落ちていた。」
+
+自分は、彼に暗号を見せる。
+
+彼の表情が少しこわばる。
+
+「・・・まぁ、これだけじゃ、ただの英数字の羅列なんだけど・・・おんなじ教室に落ちてたこれと合わせると・・・」
+
+表を見せながら言う。
+
+「なんと、「文化祭　壊す」という言葉になるんだ。」
+
+「・・・それで？僕とは断定できなくないですか？」
+
+「そうだね。これだけでは、確かに断定できない。でも、これを見るだけで君ということが断定できるよ。」
+
+自分は、彼のノートを見せる。
+
+「ほら、この暗号の「Ｂ」と、このノートの「Ｂ」。特徴的すぎるよ。」
+
+「しかもね、実はあの後、B先生に少しお話を伺う機会があってね。」
+
+「どうやらこうやら、先生はあなたのことを招集していなかったみたいでね。」
+
+「どうして嘘をついたんだい？」
+
+「・・・」
+
+「・・・もう、白状してくれ。」
+
+「・・・そうだよ。僕がやった。」
+
+「・・・そうだね。ありがとう。」
+
+「・・・本当に、ごめん。でも、これには訳があって・・・」
+
+「あぁ、わかるよ。これだろう？」
+
+自分は虐められていた証拠、「A」君のLINEを提示する。
+
+「あなたは、虐められていたんでしょう？それで、気付いてほしかったか、それとも鬱憤晴らしかなにかで、今回、犯行をした。」
+
+「・・・あぁ、そうだよ。そう。すべて当たってる。」
+
+「・・・気付いてやれなくてごめん。でも、伝え方って言うのは、他にあったと思う。」
+
+「・・・うん。」
+
+「・・・自分には、虐められている人の気持ちって言うのが分からない。だからさ、自分に相談して？」
+
+「うん・・・」
+
+「・・・もう、今回の件はいいから、今後は、君の、その状況を改善していきたい。」
+
+「だから・・・もうそんなに気負わないでくれ。」
+
+その後、自分は「犯人」君を全面バックアップし、彼の担任、また、生徒指導部に連絡を入れ、虐めを失くすように催促した。
+
+後日、「犯人」君のクラスは特別指導を受けたようだが、その虐めの主犯格であった「A」君は、もう和解したい。と思っていたようで、当人はすんなりと「犯人」君を受け入れようとした。
+
+「犯人」君も「ここで許さなかったら、ただのいたちごっこになる。」と、「A」君をはじめとしたクラスのみんなを許す気でいるらしい。
+
+そして、クラスのみんなも、少しずつ、彼のことを受け入れ、着実と、「犯人」君は、クラスの輪へと復帰出来ている。
+
+また、今回の件を詳しく犯人に聞いたところ、自分が彼に提示した証拠のほかに、「A」君の文化祭計画書も偽装していたらしい。彼は、頭が切れることが今回明らかになった。
+
+一連の事件の犯人も、自分が暴いたが、この真実は墓まで持っていくことにした。
+
+その方が、自分のためでもあり、彼のためでもあり、また、皆のためでもあるから・・・
+
+TRUE END</Text>
+  </DocumentModel>
+  <NovelSettingModel>
+    <CharactersPerLineCount>40</CharactersPerLineCount>
+    <LineCountPerPage>30</LineCountPerPage>
+  </NovelSettingModel>
+</XmlSaveObject>

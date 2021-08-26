@@ -1,0 +1,8 @@
+{
+  "text":[
+    "そうだ。全校集会中に犯行が起きた。じゃあ、その三人はその時、何をしていた？",
+    "神取 祐司は・・・"
+    ],
+    "option": ["B先生に呼び出されていた。","トイレに行っていた。","管理棟三階で準備をしていた。"],
+    "jump": ["11-4_files/sujigaawanai.json","11-4_files/sujigaawanai.json","11-4_files/third.json"]
+}
