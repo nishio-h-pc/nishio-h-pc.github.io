@@ -1,6 +1,6 @@
-<html>
+<html lang="ja">
 	<head>
-		<title>Game Test</title>
+		<title>Ingredient Incident In a high school</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="stylesheet" href="css/main.css">
@@ -8,38 +8,89 @@
 		<link rel="icon" href="../favicon.ico">
 		<link rel="apple-touch-icon" href="../apple-touch-icon.png">
 		<link rel="manifest" href="../app.webmanifest">
-		<link rel="mask-icon" href="../safari-pinned-tab.svg" color="#4b4b4b">
+		<link rel="mask-icon" href="../safari-pinned-tab.svg" color="#000000">
 		<!-- メタタグ　検索エンジン許可しない -->
 		<meta name="robots" content="noindex">
 		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-title" content="In³">
 		<meta charset="utf-8">
 		<!-- Chrome, Firefox OS and Opera -->
 		<meta name="theme-color" content="#708090">
 		<meta name="twitter:card" content="summary">
-		<meta property="og:title" content="Game Test">
-		<meta property="og:description" content="Game">
+		<meta property="og:title" content="Ingredient Incident In a high school">
+		<meta property="og:description" content="">
 		<meta property="og:image" content="https://enjoysoftware.github.io/gaming/apple-touch-icon.png">
 		<!-- JQuery 一応乗せておく -->
 		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 		<script src="js/sc_loader.js"></script>
 		<script src="js/parser.js"></script>
+		<script src="js/lock.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
 		<script src="https://unpkg.com/panzoom@9.4.0/dist/panzoom.min.js"></script>
 	</head>
 	<body>
-		<audio id="bgm"></audio>
-		<label><div class="menu msgb"><input type="checkbox" id="men"><span></span></div></label>
-		<img id="chr" style="opacity:0">
-		<div id="txt" class="msgb txt"></div>
-		<script src="js/main.js"></script>
+		<div id="title">
+			<div class="wrapper">
+				<img id="mainLogo"><br>
+			</div>
+			<div class="btnlink">
+				<span>ゲームを開始</span>
+			</div>
+		</div>
+		<div id="game" style="display:none">
+			<audio id="bgm"></audio>
+			<audio id="chrnoise"></audio>
+			<label><div class="menu msgb"><input type="checkbox" id="men"><span id="burger"></span></div></label>
+			<img id="chr" style="opacity:0">
+			<div id="txt" class="msgb txt"></div>
+		</div>
+		<video id="video" autoplay style="display:none;position:absolute;left:0;top:0;width:100%;height:100%" onended="location.reload()"></video>
 		<script>
+			var logo=document.getElementById("mainLogo");
+			window.onload = ()=>{
+				anime();
+				setTimeout(()=>{
+					logo.addEventListener("click",anime);
+					$("#mainLogo,.wrapper").animate(/^Mozilla\/5\.0 \((Macintosh;|Windows NT|X11;) /.test(navigator.userAgent)?{
+						"width" : "30vw",
+						"top" : "20vh"
+					}:{
+						"width" : "60vw",
+						"top" : "15vh"
+					})
+					$(".btnlink").fadeIn(500);
+				},5000);
+			}
+			$(".btnlink>span:not([href^='#']):not([target])").on("click", (e)=>{
+				e.preventDefault();
+				$("body").fadeOut(900);
+				if(isios())playBgm("bgm/age_com.wav");
+				setTimeout(()=>{
+					document.getElementById("title").style.display="none";
+					document.getElementById("game").style.display="block";
+					document.body.style.display="block";
+					load("js","main");
+				}, 1000);
+				return false;
+			});
 			window.addEventListener("errored",() => window.document.location.href = "error.html");
-			//強制戻しスクリプト
-			var ref = document.referrer
-			var currentHost = window.location.hostname; 
-			if( ref.length == 0 || ref.indexOf(currentHost) == -1) {
-				location.href = "../index.html";
-            }
+			function anime(){
+				logo.src="../logo.svg?"+new Date().getTime();
+			}
+			function load(dir,file){
+				var s=document.createElement("script");
+				s.src=dir+"/"+file+".js";
+				document.body.appendChild(s);
+			}
+			function isios(){
+				return /^Mozilla\/5\.0 \(iP([ao]d|hone)/.test(navigator.userAgent);
+			}
+			function playBgm(path){
+				var bgmElm = document.getElementById("bgm");
+				bgmElm.src = path;
+				bgmElm.play();
+				bgmElm.loop = true;
+			}
 		</script>
 	</body>
 </html>

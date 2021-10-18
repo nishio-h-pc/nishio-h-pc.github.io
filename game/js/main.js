@@ -1,25 +1,16 @@
-﻿// 主スクリプト
-document.body.style.backgroundImage="url('bg/back.jpg')";
-document.addEventListener("touchstart",(e)=>{ // ピンチイン・ピンチアウトによる拡大縮小を禁止
-	if(e.touches.length>1)e.preventDefault();
-},{passive:false});
-document.addEventListener("touchmove",(e)=>{ // スクロールを禁止
-	var id_e=document.getElementById("e");
-	if(e.target.className!=="pic"&&(e.target.id[0]!=="e"||id_e.clientHeight===id_e.scrollHeight))e.preventDefault();
-},{passive:false});
-var time=0;
-document.addEventListener("touchend",(e)=>{ // ダブルタップによる拡大縮小を禁止
-	var now=new Date().getTime();
-	if((now-time)<350)e.preventDefault();
-	time=now;
-},false);
+// 主スクリプト
 var txt=document.getElementById("txt");
-var txthg=()=>{
+var txthg=async ()=>{
 	var tmtxt=txt.innerHTML;
 	txt.style.height="";
 	txt.style.visibility="hidden";
 	txt.textContent="また、今回の件を詳しく犯人に聞いたところ、自分が彼に提示した証拠のほかに、神取 祐司君の文化祭計画書も偽装していたらしい。彼は、頭が切れることが今回明らかになった。どこか、抜けているようだが・・・";
-	txt.style.height="calc("+txt.clientHeight+"px - 1.95em)";
+	var htext=txt.clientHeight;
+	await sltbl(["どうやら、気のせい。","【海原 浩之君はクラスからいじめられている。また、神取 祐司君はその主犯格かもしれない。】","【海原 浩之はB先生に呼び出されていなかった。】"]);
+	var hslc1=txt.clientHeight;
+	await sltbl(["【全校集会の時、そこへいなかった人が現場付近を走り去っていた。】","【前崎 信也君が全校集会開始から約25分間、全校集会に出ず、どこかへ行っていた。】","【海原 浩之のノートを手に入れた。】"]);
+	var hslc2=txt.clientHeight;
+	txt.style.height="calc("+Math.max(htext,hslc1,hslc2)+"px - 1.95em)";
 	txt.innerHTML=tmtxt;
 	txt.style.visibility="visible";
 };
@@ -42,7 +33,6 @@ var repeatSelectorIsFirst = true;//すべて選択させるリストの呼び出
 var repeatSelectorIsFirstSub = true;//↑の予備
 //--------------//plus_jumpはすでに消されたかのフラグ
 var loadedScenarioList = [];//過去に読み込んだシナリオの順番記憶
-var sc_count = 0;//メイン関数の中で最初に呼ばれたか否かのフラグ
 var text_count = 0;//text配列をどこまで表示したかのカウンター
 var suji_count = 0;//推理シーケンスで失敗した回数
 var loadedObj;//読み込まれたシナリオデータ
@@ -55,7 +45,6 @@ ERR_SCENARIO = "json/err.json"//エラーシナリオ
 //---------------以下は現在の値
 var currentBgm = "";
 var currentBg = "";
-var currentImg = "";
 var currentSpd = "";
 //---------------
 menu.addEventListener("click",async function(){ // メニュー
@@ -66,6 +55,8 @@ menu.addEventListener("click",async function(){ // メニュー
 			txt.style.display="block";
 		}
 		if(disp.rt)await evnpr("dsstp");
+		var s=document.getElementById("s");
+		if(s!==null)s.style.display="none";
 		switch(await slct(["証拠品の確認","セーブ","ロード"])){
 			case 0:
 				var outer=document.createElement("div");
@@ -80,9 +71,18 @@ menu.addEventListener("click",async function(){ // メニュー
 				$(window).resize(outbt);
 				outer.style.zIndex="1";
 				var ff=false;
+				var rmbtn=()=>{
+					if(txt.style.width!==""){
+						var picbt=document.getElementById("picbt");
+						if(picbt.checked)picen();
+						document.body.removeChild(picbt.parentNode);
+						txt.style.width="";
+					}
+				}
 				sdata.forEach((evd)=>{
 					var inner=document.createElement("div");
 					inner.addEventListener("click",(e)=>{
+						rmbtn();
 						sitem.style.background="";
 						sitem=e.currentTarget;
 						sitem.style.background="blue";
@@ -134,12 +134,7 @@ menu.addEventListener("click",async function(){ // メニュー
 				document.body.appendChild(outer);
 				if(outer.clientWidth!==outer.offsetWidth)outer.style.marginRight="8px";
 				await new Promise((resolve)=>this.addEventListener("click",resolve));
-				if(txt.style.width!==""){
-					var picbt=document.getElementById("picbt");
-					if(picbt.checked)picen();
-					document.body.removeChild(picbt.parentNode);
-					txt.style.width="";
-				}
+				rmbtn();
 				document.body.removeChild(outer);
 				break;
 			case 1:
@@ -162,40 +157,33 @@ menu.addEventListener("click",async function(){ // メニュー
 			txt.innerHTML=temp;
 			if(disp.rt)disp();
 			if(tdn_f)txt.style.display="none";
+			if(s!==null)s.style.display="";
 		}
 	}else{
 		slct.menu=true;
 		window.dispatchEvent(new Event("slend"));
 	}
 });
-// ↓test.jsからテストのためのシナリオを読み出すことを示す。
-load("scene","test");
-async function chr(cn){ // キャラクターの画像を読み出す関数
-	if(img.style.opacity!=="0"){
-		img.style.animation="fadeout 1s";
-		img.style.opacity="0";
-	}
-	await new Promise((resolve)=>setTimeout(resolve,1000));
-	img.setAttribute("src",cn);
+main();
+async function chr(cn,flag){ // キャラクターの画像を読み出す関数
+	if(flag)await new Promise((resolve)=>setTimeout(resolve,700));
+	img.src=cn;
 	setTimeout(()=>{
-		img.style.animation="fadein 1s";
+		img.style.animation="fadein .7s";
 		img.style.opacity="1";
 	},99);
-}
-function load(dir,file){ // Javascriptを動的に読み出す関数
-	var s=document.createElement("script");
-	s.src=dir+"/"+file+".js";
-	document.body.appendChild(s);
 }
 function disp(){ // テキストを表示する部分
 	txt.innerText=msg.substring(0,count);
 	count++;
 	var rep=setTimeout("disp()",speed);
 	if(count>msg.length){
+	        charNoise("bgm/noises/entering_chr_kai.wav",false);
 		clearTimeout(rep);
 		window.dispatchEvent(new Event("dsend"));
 	}
 	if(menu.checked){
+	        charNoise("bgm/noises/entering_chr_kai.wav",false);
 		clearTimeout(rep);
 		window.dispatchEvent(new Event("dsstp"));
 	}
@@ -206,8 +194,11 @@ async function text(){ // テキストを表示する関数
 	disp.rt=true;
 	text.rt=true;
 	count=0;
+	charNoise("bgm/noises/entering_chr_kai.wav",true);
 	var lstn=(e)=>{
 		if((e.key==="Enter"||e.type==="click")&&!menu.checked){
+			playSe("bgm/noises/selecting.wav");
+			charNoise("bgm/noises/entering_chr_kai.wav",false);
 			count=1+msg.length;
 			txt.textContent=msg;
 			window.dispatchEvent(new Event("enter"));
@@ -239,24 +230,7 @@ async function artxt(texts){ // 配列で渡されたテキストを表示する
 }
 async function slct(optn){ // 選択肢を表示する関数optnを配列形式で渡す
 	if(ispc()){
-		var table=document.createElement("table");
-		var tbody=document.createElement("tbody");
-		tbody.className="txt";
-		for(var i=0;i<optn.length;i++){
-			var tr=document.createElement("tr");
-			var td=document.createElement("td");
-			td.className="opt";
-			td.id="o"+i;
-			if(i<1)td.textContent="▶";
-			tr.appendChild(td);
-			td=document.createElement("td");
-			td.textContent=optn[i];
-			tr.appendChild(td);
-			tbody.appendChild(tr);
-		}
-		table.appendChild(tbody);
-		txt.textContent="";
-		txt.appendChild(table);
+		await sltbl(optn);
 		var curar=[0,0];
 		var lstn=(e)=>{
 			cur=curar[+menu.checked];
@@ -266,6 +240,7 @@ async function slct(optn){ // 選択肢を表示する関数optnを配列形式�
 			}else if(e.key==="ArrowUp"&&cur>0){
 				cur--;
 			}else if(e.key==="Enter"){
+				playSe("bgm/noises/selecting.wav");
 				window.dispatchEvent(new Event("slent"));
 			}
 			document.getElementById("o"+cur).textContent="▶";
@@ -311,6 +286,7 @@ async function slct(optn){ // 選択肢を表示する関数optnを配列形式�
 		if(menu.checked){
 			await Promise.race([evnpr("slend"),evnpr("slent")]);
 		}else{
+			div.id="s";
 			await evnpr("slent");
 			slct.menu=false;
 		}
@@ -361,13 +337,9 @@ async function srvy(bgif,items){ // 調査画面を表示する関数
 	var lstn=(e)=>{
 		if(!text.rt){
 			map.removeChild(e.currentTarget);
-			if(!ispc())srvy.inner.removeChild(document.getElementById("t"+e.currentTarget.id[1]));
-			if(img.style.opacity!=="1"){
-				img.style.animation="fadein 1s";
-				img.style.opacity="1";
-			}
-			img.style.display="block";
+			srvy.inner.removeChild(document.getElementById("t"+e.currentTarget.id[1]));
 			txt.style.display="block";
+			playSe("bgm/noises/earning_evidence.wav");
 			srvy.func[e.currentTarget.id[1]]();
 		};
 	};
@@ -383,49 +355,41 @@ async function srvy(bgif,items){ // 調査画面を表示する関数
 		srvy.func[i]=items[i][1];
 		map.appendChild(itelm);
 		itelm.addEventListener("click",lstn);
-		if(!ispc()){
-			var crds=items[i][0].split(",").map(Number);
-			crds=new Array(Math.ceil(crds.length/2)).fill().map((_,j)=>crds.slice(2*j,2*j+2));
-			var as=0;
-			var px=0;
-			for(var j=1;j<crds.length-1;j++){
-				var a=((crds[0][1]-crds[1+j][1])*(crds[0][0]-crds[j][0])-(crds[0][0]-crds[1+j][0])*(crds[0][1]-crds[j][1]))/2;
-				as+=a;
-				px+=a*(crds[0][0]+crds[1+j][0]+crds[j][0])/3;
-			};
-			var tri=document.createElement("div");
-			tri.id="t"+i;
-			tri.style.position="absolute";
-			tri.style.top="calc("+100*Math.min.apply(null,crds.map((z)=>{return z[1]}))/bg.naturalHeight+"% - 2em)";
-			tri.style.left="calc("+100*px/as/bg.naturalWidth+"% - 1em)";
-			tri.style.width="0";
-			tri.style.height="0";
-			tri.style.background="transparent";
-			tri.style.borderTop="2em solid yellow";
-			tri.style.borderLeft="1em solid transparent";
-			tri.style.borderRight="1em solid transparent";
-			srvy.inner.appendChild(tri);
-		}
+		var crds=items[i][0].split(",").map(Number);
+		crds=new Array(Math.ceil(crds.length/2)).fill().map((_,j)=>crds.slice(2*j,2*j+2));
+		var as=0;
+		var px=0;
+		for(var j=1;j<crds.length-1;j++){
+			var a=((crds[0][1]-crds[1+j][1])*(crds[0][0]-crds[j][0])-(crds[0][0]-crds[1+j][0])*(crds[0][1]-crds[j][1]))/2;
+			as+=a;
+			px+=a*(crds[0][0]+crds[1+j][0]+crds[j][0])/3;
+		};
+		var tri=document.createElement("div");
+		tri.id="t"+i;
+		tri.style.position="absolute";
+		tri.style.top="calc("+100*Math.min.apply(null,crds.map((z)=>{return z[1]}))/bg.naturalHeight+"% - 2em)";
+		tri.style.left="calc("+100*px/as/bg.naturalWidth+"% - 1em)";
+		tri.style.width="0";
+		tri.style.height="0";
+		tri.style.background="transparent";
+		tri.style.borderTop="2em solid yellow";
+		tri.style.borderLeft="1em solid transparent";
+		tri.style.borderRight="1em solid transparent";
+		srvy.inner.appendChild(tri);
 	}
 	srvy.inner.appendChild(map);
 	jQuery("img[usemap]").rwdImageMaps();
 	await evnpr("srend");
 	document.body.removeChild(outer);
+	img.style.animation="";
+	img.style.display="block";
 }
 async function srend(){ // srvy()の引数の関数の最後に実行する関数
 	if(stopScenario)return;
 	if(map.childElementCount<1){
 		window.dispatchEvent(new Event("srend"));
 	}else{
-		img.style.animation="fadeout 1s";
-		img.style.opacity="0";
 		txt.style.display="none";
-		await new Promise((resolve)=>setTimeout(resolve,1000));
-		if(img.style.opacity!=="1"){
-			img.style.display="none";
-			img.style.animation="fadein 1s";
-			img.style.opacity="1";
-		}
 	}
 }
 async function pic(flpth){ // 証拠品の写真を表示する関数
@@ -446,14 +410,14 @@ async function pic(flpth){ // 証拠品の写真を表示する関数
 	await evnpr("picok");
 	pic.resiz=()=>{
 		pic.div.style.bottom=txt.clientHeight+16+"px";
+		var zoom=Math.min(pic.div.clientHeight/pict.clientHeight,pic.div.clientWidth/pict.clientWidth);
 		pic.zoom=panzoom(pict,{
-			minZoom: Math.min(pic.div.clientHeight/pict.clientHeight,pic.div.clientWidth/pict.clientWidth),
-			initialX: 0,
-			initialY: 0,
-			initialZoom: Math.max(pic.div.clientHeight/pict.clientHeight,pic.div.clientWidth/pict.clientWidth),
+			minZoom: zoom,
+			initialZoom: zoom,
 			bounds: true,
 			boundsPadding: 0
 		});
+		pic.zoom.moveTo((pic.div.clientWidth-pict.clientWidth*zoom)/2,(pic.div.clientHeight-pict.clientHeight*zoom)/2);
 	}
 	pic.resiz();
 	$(window).resize(pic.resiz);
@@ -464,8 +428,28 @@ function picen(){ // 証拠品の写真の表示をやめる関数
 	document.body.removeChild(pic.div);
 }
 // 上記の関数の中で使う関数
-function ispc(){ // タッチ可能なモバイル端末でないならtrueを返す関数
-	return /^Mozilla\/5\.0 \((Macintosh;|Windows NT|X11;) /.test(navigator.userAgent)||!("ontouchend"in document);
+async function sltbl(optn){ // 選択肢の表を作る関数
+	var table=document.createElement("table");
+	var tbody=document.createElement("tbody");
+	tbody.className="txt";
+	for(var i=0;i<optn.length;i++){
+		var tr=document.createElement("tr");
+		var td=document.createElement("td");
+		td.className="opt";
+		td.id="o"+i;
+		if(i<1)td.textContent="▶";
+		tr.appendChild(td);
+		td=document.createElement("td");
+		td.textContent=optn[i];
+		tr.appendChild(td);
+		tbody.appendChild(tr);
+	}
+	table.appendChild(tbody);
+	txt.textContent="";
+	txt.appendChild(table);
+}
+function ispc(){ // タッチ可能でパソコンでないならばtrueを返す関数
+	return /^Mozilla\/5\.0 \((Macintosh;|Windows NT|X11;) /.test(navigator.userAgent)||!("ontouchend"in document)
 }
 function isfox(){ // Firefoxならtrueを返す関数
 	return /^Mozilla\/5\.0 \(.+; rv:\d+(\.\d+)*\) Gecko\/\d+/.test(navigator.userAgent);
@@ -477,13 +461,12 @@ async function evnpr(evnnm){ // メニューが開かれていないときのみ
 	}
 	await new Promise((resolve)=>window.addEventListener(evnnm,resolve));
 }
-window.onload = main;
 async function main(){//エントリーポイント(一シナリオごとに呼び出される)
 	if(!isloaded){isloaded = false;text_count = 0;} 
-	var loadingFile = sc_count != 0 ? "json/" + scenarioFile : "json/" + FIRST_SCENARIO;
+	var loadingFile = scenarioFile!="" ? "json/" + scenarioFile : "json/" + FIRST_SCENARIO;
 	if(loadingFile.indexOf("suji") == -1){
 	isSuji = false;
-	loadedScenarioList.push(sc_count != 0 ? scenarioFile :  FIRST_SCENARIO);
+	loadedScenarioList.push(scenarioFile!="" ? scenarioFile :  FIRST_SCENARIO);
 	}else{
 		isSuji = true;
 		if(loadingFile == "json/12-5/suji.json"){
@@ -491,7 +474,13 @@ async function main(){//エントリーポイント(一シナリオごとに呼�
 		if(suji_count == 3)loadedScenarioList.push("13maezaki_dis.json");
 	}
 	}
-	if(!/.*\.json/i.test(loadingFile)) {location.href = scenarioFile;return;}
+	if(/\.mp4$/i.test(loadingFile)){
+		var video = document.getElementById("video");
+		video.src = loadingFile.replace("json","videos");
+		document.getElementById("game").style.display="none";
+		video.style.display = "block";
+		throw new Error;
+	}
 	loadedObj = await loadMain(loadingFile);
 	if(loadedObj.jump[0] == "last:"){
 		if(loadedObj.number == 2 && repeatSelectorIsFirstSub == true){
@@ -505,7 +494,6 @@ async function main(){//エントリーポイント(一シナリオごとに呼�
 		}
 	}
 	console.log(loadedScenarioList)
-	sc_count ++
 	await show();
 }
 async function show(){//テキスト表示本体(一段ごとに呼び出される)
@@ -513,7 +501,6 @@ async function show(){//テキスト表示本体(一段ごとに呼び出され�
 	if(loadedObj.jump[0] != "last:"){//選択肢を減らすシナリオかどうかjump[0]にtrueを指定すると選択肢減らすやつ
 	var textar_length = loadedObj.text.length;
 	if(text_count >= textar_length) {//段が全て終わった▶ジャンプ先の提示
-		text_count = 0;
 		if(loadedObj.jump.length >= loadedObj.option.length){//jumpの設定は適切?
 			if(loadedObj.option.length == 1){
 				scenarioFile = isNaN(loadedObj.jump[0]) ? loadedObj.jump[0] : loadedScenarioList[loadedScenarioList.length - loadedObj.jump[0] -1];
@@ -525,6 +512,7 @@ async function show(){//テキスト表示本体(一段ごとに呼び出され�
 			alert("エラー:\n次はどのシナリオにジャンプすればよいのですか?\njumpの値は必ずoptionの数以上でなければなりません");
 			scenarioFile = ERR_SCENARIO;
 		}
+		text_count = 0;
 		await main();
 		return;
 	}
@@ -565,8 +553,6 @@ async function show(){//テキスト表示本体(一段ごとに呼び出され�
 			}
 		}
 		}
-	if(loadedObj.bg != undefined) {document.body.style.backgroundImage="url('" + loadedObj.bg +"')"; currentBg = loadedObj.bg}
-	if(loadedObj.img != undefined){ chr(loadedObj.img); currentImg = loadedObj.img;}
 	if(beforeOptionList.length == 0 && loadedObj.number != 2){//ループから抜ける
 		scenarioFile = loadedObj.jump[1];
 		repeatSelectorIsFirst = true; 
@@ -593,10 +579,17 @@ async function show(){//テキスト表示本体(一段ごとに呼び出され�
 	await show();
 }
 async function commandToDisp(command_list){//命令の指定を画面に反映させる関数
+	if(img.style.opacity!=="0"){
+		img.style.animation="fadeout .7s";
+		img.style.opacity="0";
+		var chr_f=true;
+	}
 	for(var i=0;i<command_list.length;i++){
 		if(command_list[i].value == "") {alert("エラー:\n命令「" + command_list[i].command + "」の右辺には何も指定されていません"); continue;}
 		switch(command_list[i].command){
 			case "bg":
+				if(command_list[i].value==="black_screen.png")document.getElementById("bgm").pause();
+				if(document.body.style.background=="black")document.body.style.background="";
 				document.body.style.backgroundImage="url('bg/" + command_list[i].value +"')";
 				currentBg = command_list[i].value;
 				break;
@@ -605,8 +598,7 @@ async function commandToDisp(command_list){//命令の指定を画面に反映�
 				currentBgm = command_list[i].value;
 				break;
 			case "img":
-				chr("chr/"+command_list[i].value);
-				currentImg = command_list[i].value;
+				chr("chr/"+command_list[i].value,chr_f);
 				break;
 			case "spd":
 				speed = command_list[i].value;
@@ -630,11 +622,16 @@ async function commandToDisp(command_list){//命令の指定を画面に反映�
 		}
 	}
 }
-function playBgm(path){//BGM再生関数
-	var bgmElm = document.getElementById("bgm");
-	bgmElm.src = path;
-	bgmElm.play();
-	bgmElm.loop = true;
+function charNoise(path,playing){//文字の音再生関数
+	var chnoiseElm = document.getElementById("chrnoise");
+	chnoiseElm.src = /^Mozilla\/5\.0 \(iP([ao]d|hone)/.test(navigator.userAgent)?path.replace("_kai",""):path;
+	if(playing == true){
+		chnoiseElm.play();
+	}else{
+		chnoiseElm.pause();
+		chnoiseElm.currentTime = 0;
+	}
+	chnoiseElm.loop = true;
 }
 function playSe(path){//効果音再生関数
 	var seElm = new Audio();
@@ -647,7 +644,6 @@ async function saveObj(){
 	beforeJumpList系
 	scenarioFile
 	text_count
-	sc_count
 	sdata
 	loadedscenariolist
 	isZeroEvd
@@ -660,14 +656,12 @@ async function saveObj(){
 		beforeOptionListSub : beforeOptionListSub,
 		scenarioFile : scenarioFile,
 		text_count: text_count,
-		sc_count : sc_count,
 		sdata : sdata,
 		loadedScenarioList : loadedScenarioList,
 		isZeroEvd : isZeroEvd,
 		suji_count : suji_count,
 		currentBg : currentBg,
 		currentBgm : currentBgm,
-		currentImg : currentImg,
 		currentSpd : currentSpd
 	}
 
@@ -676,20 +670,22 @@ async function saveObj(){
 }
 async function loadObj(){
 	var loadedDataObj = JSON.parse(localStorage.getItem("gameData"));
+	if(loadedDataObj == null) {alert("セーブデータはありません");return;}
 	beforeJumpList = loadedDataObj.beforeJumpList;
 	beforeOptionList = loadedDataObj.beforeOptionList;
 	beforeJumpListSub = loadedDataObj.beforeJumpListSub;
 	beforeOptionListSub = loadedDataObj.beforeOptionListSub;
 	scenarioFile = loadedDataObj.scenarioFile;
 	text_count = loadedDataObj.text_count -1 ;
-	sc_count = loadedDataObj.sc_count;
 	sdata = loadedDataObj.sdata;
 	loadedScenarioList = loadedDataObj.loadedScenarioList;
 	isZeroEvd = loadedDataObj.isZeroEvd;
 	suji_count = loadedDataObj.suji_count;
-	document.body.style.backgroundImage="url('bg/" + loadedDataObj.currentBg +"')";
-	playBgm(loadedDataObj.currentBgm);
-	chr("chr/" + loadedDataObj.currentImg);
+	if(loadedDataObj.currentBg != ""){
+		document.body.style.backgroundImage="url('bg/" + loadedDataObj.currentBg +"')";
+		if(loadedDataObj.currentBg == "black_screen.png") document.getElementById("bgm").pause();
+	}
+	if(loadedDataObj.currentBgm != ""&&loadedDataObj.currentBg != "black_screen.png") playBgm("bgm/" + loadedDataObj.currentBgm);
 	speed = loadedDataObj.currentSpd;
 	stopScenario = true;
 	isloaded = true;

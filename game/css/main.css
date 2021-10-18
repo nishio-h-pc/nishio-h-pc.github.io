@@ -1,5 +1,6 @@
 body{
 	position: relative;
+	background: whitesmoke;
 	background-size: cover;
 	background-position: center;
 	font-family: "New Tegomin",serif;
@@ -8,6 +9,57 @@ body{
 	touch-action: none;
 	-webkit-user-select: none;
 	-webkit-touch-callout: none;
+}
+#title{
+	font-family: sans-serif;
+	text-align: center;
+}
+.wrapper{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.btnlink{
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.btnlink span {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	padding: 1em 2em;
+	width: 300px;
+	color: #2285b1;
+	font-size: 18px;
+	font-weight: 700;
+	border: 2px solid #2285b1;
+	transition: 0.3s;
+	text-decoration: none;
+}
+.btnlink span::after {
+	content: '';
+	width: 5px;
+	height: 5px;
+	border-top: 3px solid #2285b1;
+	border-right: 3px solid #2285b1;
+	transform: rotate(45deg);
+}
+.btnlink span:hover {
+	color: whitesmoke;
+	text-decoration: none;
+	background-color: #2285b1;
+}
+.btnlink span:hover::after {
+	border-top: 3px solid whitesmoke;
+	border-right: 3px solid whitesmoke;
+}
+#mainLogo{
+	width: 80vw;
 }
 .menu{
 	position: absolute;
@@ -28,7 +80,7 @@ input{
 	top: 0;
 	transform: rotate(-45deg);
 }
-span,span:before,span:after{
+#burger,#burger:before,#burger:after{
 	content: "";
 	position: absolute;
 	display: block;
@@ -38,13 +90,13 @@ span,span:before,span:after{
 	background: white;
 	transition: .5s;
 }
-span{
+#burger{
 	top: 2.295em;
 }
-span:before{
+#burger:before{
 	bottom: 1.32em;
 }
-span:after{
+#burger:after{
 	top: 1.32em;
 }
 #picbt:checked ~ div{
@@ -53,9 +105,9 @@ span:after{
 #chr{
 	position: absolute;
 	z-index: 1;
-	bottom: 4em;
-	right: 9em;
-	height: 40%;
+	bottom: 0;
+	right: 6em;
+	height: 80%;
 }
 .txt{
 	font-size: 2em;
@@ -85,6 +137,16 @@ span:after{
 }
 tr{
 	line-height: 1;
+}
+@media screen and (max-width: 1024px) and (hover: none) and (pointer: coarse){
+	.btnlink span{
+		transform: scale(2) translate(0,0);
+	}
+	#chr{
+		bottom: 4em;
+		right: 9em;
+		height: 40%;
+	}
 }
 @keyframes fadein{
 	0%{
