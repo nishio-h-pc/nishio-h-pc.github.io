@@ -36,6 +36,12 @@
 			<div class="btnlink">
 				<span>ゲームを開始</span>
 			</div>
+			<div class="btnlink" style="top:64%">
+				<span>ゲームの感想アンケート</span>
+			</div>
+			<div class="btnlink" style="top:75%">
+				<span>パソコン部の今後の活動アンケート</span>
+			</div>
 		</div>
 		<div id="game" style="display:none">
 			<audio id="bgm"></audio>
@@ -61,7 +67,7 @@
 					$(".btnlink").fadeIn(500);
 				},5000);
 			}
-			$(".btnlink>span:not([href^='#']):not([target])").on("click", (e)=>{
+			$("div:nth-child(2)>span").on("click", (e)=>{
 				e.preventDefault();
 				$("body").fadeOut(900);
 				if(isios())playBgm("bgm/age_com.wav");
@@ -73,6 +79,8 @@
 				}, 1000);
 				return false;
 			});
+			$("div:nth-child(3)>span").on("click", (e)=>location="https://jp.surveymonkey.com/r/8JSFFYV");
+						$("div:nth-child(4)>span").on("click", (e)=>location="https://jp.surveymonkey.com/r/99VHZXX");
 			window.addEventListener("errored",() => window.document.location.href = "error.html");
 			function anime(){
 				logo.src="../logo.svg?"+new Date().getTime();
