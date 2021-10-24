@@ -142,15 +142,19 @@ menu.addEventListener("click",async function(){ // メニュー
 				this.checked=false;
 				break;
 			case 2:
-				window.dispatchEvent(new Event("slent"));
-				window.dispatchEvent(new Event("srend"));
-				loadObj();
-				this.checked=false;
-				if(disp.rt){
-					loadf=true;
-					window.dispatchEvent(new Event("dsend"));
+				if(srvy.rt){
+					alert("調査画面ではロードできません。\nページを再読込してからロードして下さい。");
+				}else{
+					window.dispatchEvent(new Event("slent"));
+					window.dispatchEvent(new Event("srend"));
+					loadObj();
+					this.checked=false;
+					if(disp.rt){
+						loadf=true;
+						window.dispatchEvent(new Event("dsend"));
+					}
+					if(text.rt)window.dispatchEvent(new Event("enter"));
 				}
-				if(text.rt)window.dispatchEvent(new Event("enter"));
 				break;
 		}
 		if(!loadf){
@@ -251,7 +255,7 @@ async function slct(optn){ // 選択肢を表示する関数optnを配列形式�
 		if(menu.checked){
 			await Promise.race([evnpr("slend"),evnpr("slent")]);
 		}else{
-			await evnpr("slent");
+			await new Promise((resolve)=>window.addEventListener("slent",resolve));
 			slct.menu=false;
 		}
 		window.removeEventListener("keydown",lstn);
@@ -296,6 +300,8 @@ async function slct(optn){ // 選択肢を表示する関数optnを配列形式�
 	}
 }
 async function srvy(bgif,items){ // 調査画面を表示する関数
+	srvy.rt=true;
+	currentBg="";
 	document.body.style.background="black";
 	img.style.display="none";
 	txt.style.display="none";
@@ -383,6 +389,7 @@ async function srvy(bgif,items){ // 調査画面を表示する関数
 	document.body.removeChild(outer);
 	img.style.animation="";
 	img.style.display="block";
+	srvy.rt=false;
 }
 async function srend(){ // srvy()の引数の関数の最後に実行する関数
 	if(stopScenario)return;
@@ -573,6 +580,7 @@ async function show(){//テキスト表示本体(一段ごとに呼び出され�
 	beforeJumpList.splice(selection,1);
 	beforeOptionList.splice(selection,1);
 	}
+	text_count = 0;
 	await main();
 	return;
 	}
@@ -642,6 +650,7 @@ async function saveObj(){
 	/*
 	保存するもの
 	beforeJumpList系
+	repeatSelectorIsFirst系
 	scenarioFile
 	text_count
 	sdata
@@ -654,6 +663,8 @@ async function saveObj(){
 		beforeOptionList : beforeOptionList,
 		beforeJumpListSub : beforeJumpListSub,
 		beforeOptionListSub : beforeOptionListSub,
+		repeatSelectorIsFirst : repeatSelectorIsFirst,
+		repeatSelectorIsFirstSub : repeatSelectorIsFirstSub,
 		scenarioFile : scenarioFile,
 		text_count: text_count,
 		sdata : sdata,
@@ -675,17 +686,21 @@ async function loadObj(){
 	beforeOptionList = loadedDataObj.beforeOptionList;
 	beforeJumpListSub = loadedDataObj.beforeJumpListSub;
 	beforeOptionListSub = loadedDataObj.beforeOptionListSub;
+	repeatSelectorIsFirst = loadedDataObj.repeatSelectorIsFirst;
+	repeatSelectorIsFirstSub = loadedDataObj.repeatSelectorIsFirstSub;
 	scenarioFile = loadedDataObj.scenarioFile;
 	text_count = loadedDataObj.text_count -1 ;
 	sdata = loadedDataObj.sdata;
 	loadedScenarioList = loadedDataObj.loadedScenarioList;
 	isZeroEvd = loadedDataObj.isZeroEvd;
 	suji_count = loadedDataObj.suji_count;
-	if(loadedDataObj.currentBg != ""){
-		document.body.style.backgroundImage="url('bg/" + loadedDataObj.currentBg +"')";
-		if(loadedDataObj.currentBg == "black_screen.png") document.getElementById("bgm").pause();
+	currentBg = loadedDataObj.currentBg;
+	if(currentBg != ""){
+		document.body.style.backgroundImage="url('bg/" + currentBg +"')";
+		if(currentBg == "black_screen.png") document.getElementById("bgm").pause();
 	}
-	if(loadedDataObj.currentBgm != ""&&loadedDataObj.currentBg != "black_screen.png") playBgm("bgm/" + loadedDataObj.currentBgm);
+	currentBgm = loadedDataObj.currentBgm;
+	if(currentBgm != ""&&currentBg != "black_screen.png") playBgm("bgm/" + currentBgm);
 	speed = loadedDataObj.currentSpd;
 	stopScenario = true;
 	isloaded = true;
